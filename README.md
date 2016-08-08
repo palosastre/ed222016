@@ -14,11 +14,15 @@ Las tareas se entregarán 5 minutos antes que termine la clase para la discusió
 
 Las correcciones de cada tarea de cada alumno se harán en los espacios de comentarios de cada uno de los [pull request](https://github.com/nicotron/ed222016/pulls) al momento de entregada la tarea.
 
+Guía para crear [pull request](https://help.github.com/articles/creating-a-pull-request/)
+
 
 
 #### Problemas durante el curso
 
 Si alguien ve que existe algún problema general en los ejemplos, tareas o guías, el camino para hacerlo es generar un [issue](https://github.com/nicotron/ed222016/issues) en donde se podrá ver y comentar por todo el curso con el fin de resolver el problema en conjunto. 
+
+Guía para crear [issues](https://help.github.com/articles/creating-an-issue/)
 
 
 
