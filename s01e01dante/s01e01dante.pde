@@ -3,7 +3,7 @@
 //s01e01dante /semana 1 ejercicio 1 nombre
 /* Copia de la Imagen entregada por el profesor (nombre del archivo s01e01_31)*/
 
-int X= 40;                   //variable X es 40
+int X= 40;                   //variable X es 40 
 int y= 60;                   //variable Y es 60
 int size1=20;                //variable size1 es 20
 rect(X, y, size1, size1);     //cuadrado ubicado en las cordenadas entregadas por la variables X e y, del diametro entregado por el size1
