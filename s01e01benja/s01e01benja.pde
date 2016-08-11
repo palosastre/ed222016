@@ -14,7 +14,7 @@ int z = 40;
 int s = 60;
 int k = 80;
 
-line(k,x, s, s);
-line(z, z, y, s);
-rect(s, k, y, y);
-ellipse(x, y, h, h);
+line(k,x, s, s);//linea salendo del borde superior
+line(z, z, y, s);//linea al medio del canvas
+rect(s, k, y, y);//cuadrado en borde inferiror al lado derecho
+ellipse(x, y, h, h);//ellipse al borde izquierdo por arriba
