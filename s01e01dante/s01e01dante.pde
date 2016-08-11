@@ -1,5 +1,6 @@
 //Expresión Digital - Diseño Digital - UDD - 2016
 //Dante Crovetto
+//prueba
 //s01e01dante /semana 1 ejercicio 1 nombre
 /* Copia de la Imagen entregada por el profesor (nombre del archivo s01e01_31)*/
 
