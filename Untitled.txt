@@ -1,0 +1,13 @@
+pasear el perro
+-tomar la correa
+-ponerle la correa al perro
+- sosteniendo la corriea dirigirme hacia la salida
+-abir la puerta
+-salir con el perro
+-dirijirce a la plaza
+-dar 2 vueltas a la plaza
+-devolverse a la casa
+_abri la puerta
+-entrar
+-soltar la correa
+-fin.
