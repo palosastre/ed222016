@@ -13,7 +13,7 @@ int z = 60;
 int s = 80;
 int k = 100;
 
-line(x, x, s, y);
-line(y, x, s, k);
-ellipse(x, z, h, h);
-rect(f, y, x, x);
+line(x, x, s, y);//diagonal en la mitad superior del canvas
+line(y, x, s, k);//diagonal cruzando al anterior llegando al borde inferior
+ellipse(x, z, h, h);//ellispe puesto en la mitad inferior del canvas
+rect(f, y, x, x);//cuadrado superpuesto al ellipse a la mitad del canvas

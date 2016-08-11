@@ -11,7 +11,6 @@ int x = 0;
 int y = 20;
 int h = 30;
 int z = 40;
-int d = 50;
 int s = 60;
 int k = 80;
 
