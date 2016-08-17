@@ -12,12 +12,15 @@ ellipse(x*4, y, x*4, x*4);     //elipse más grande con relleno blanco
 fill(54, 215, 183);            //turquoise (color claro)
 ellipse(x*4, y, y, y);         //elipse mediana con relleno turquesa
 fill(27, 163, 156);            //light sea green (color oscuro)
-ellipse(x*4, y, x, x);
+ellipse(x*4, y, x, x);         //elipse del centro color  sea green
 
 line(x*0, x*5, x*3, x*3);      //línea delgada que nace de la esquina inderior izquierda del canvas
 
-rect(x, y, x, x);              //cuadrado con relleno turquesa. Como la función de color está arriba y no
-                               //hay cambios determinados por una nueva, queda con el último color dado.
+rect(x, y, x, x);              //cuadrado con relleno sea green. Como la función de color está arriba y no
+                               //hay cambios determinados por una nueva, queda con el último color dado.           
+
+strokeWeight(5);               //tamaño de los pixeles ocupados por el punto
+point(x*3, y*2);               //punto bajo el circulo
 
 noFill();                      //función para indicar que la figura bajo ésta no tiene relleno       
 strokeWeight(3);               //determinar un grosor de 3px a la línea 
