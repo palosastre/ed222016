@@ -1,19 +1,20 @@
-//Expresión Digital - Diseño Digital - UDD - 2016
-//Benjamin Gutierrez
-//s01c01benja
-
-/*dos lineas superpuestas al lado derecho del canvas,
-y al lado izquierdo una ellipse bajo un cuadrado*/
-
-int f = 0;
 int x = 20;
-int h = 30;
-int y = 40;
-int z = 60;
-int s = 80;
-int k = 100;
+int y = 60;
+int u = 50;
+int i = 30;
+int o = 100;
 
-line(x, x, s, y);//diagonal en la mitad superior del canvas
-line(y, x, s, k);//diagonal cruzando al anterior llegando al borde inferior
-ellipse(x, z, h, h);//ellispe puesto en la mitad inferior del canvas
-rect(f, y, x, x);//cuadrado superpuesto al ellipse a la mitad del canvas
+fill(96, 59, 133);
+stroke(0,0,0);
+ellipse(x, o, i, i);
+
+fill(67, 59, 103);
+stroke(255,255,255);
+rect(u, i, x, x);
+
+stroke(0,0,0);
+line(x, y, y, o);
+
+stroke(255,255,255);
+strokeWeight(10);
+line(60,0, 60, 40);
