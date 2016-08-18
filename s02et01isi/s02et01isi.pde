@@ -24,7 +24,7 @@ int b= 20;              //Asigno valor para Variable b
 color a = color(252,179,116);       //Asigno valor para color amarillo.
 color v = color(164,189,139);       //Asigno valor para color verde.
 color bl = color(255,255,255);      //Asigno valor para color blanco.
-color n = color(0,0,0);             //Asigno valor para color negro.
+color n = color(0, 0, 0);             //Asigno valor para color negro.
 
 
 
