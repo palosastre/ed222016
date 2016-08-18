@@ -15,16 +15,13 @@ void draw() {
   stroke(b); //todo tendra una linea de color blanco, a menos que se indique lo contrario
   strokeWeight (10); //este corresponde al ancho que tendra nuestra linea
   
-  rectMode(CORNER); //esto le indica a nuestra figura que se tiene que ubicar en una esquina
   fill(color1); //este primer cuadrado usara el colo: "color1"
   rect(0, 0, t, t); // se encuentra en la posicion 0, y su tamaño es "t", el cual corresponde a 250
 
-  rectMode(CORNER); //esto le indica a nuestra figura que se tiene que ubicar en una esquina
-  fill(n); //este primer cuadrado usara la variable: "n"
+  fill(n); //este segundo cuadrado usara la variable: "n"
   rect(t, 0, t, t); // al igual que el anterior su tamaño es  "t", pero su posicion varia, cosa de que cambie de esquina
 
-  rectMode(CORNER); //esto le indica a nuestra figura que se tiene que ubicar en una esquina
-  fill(n); //este primer cuadrado usara la variable: "n"
+  fill(n); //este tercer cuadrado usara la variable: "n"
   rect(0, t, t, t); // al igual que el anterior su tamaño es  "t", pero su posicion varia, cosa de que cambie de esquina
   
   fill(color2); // En este caso la siguiente fgura que se encuentre vajo de este codigo usara el color: "color2"
