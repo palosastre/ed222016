@@ -6,6 +6,8 @@
 linea blanca, circulo calipso y borde blanco, cuadrado amarillo y punto negro.
 */
 
+int r, g, b;
+int x, y;
 
 //linea
 stroke(255);
