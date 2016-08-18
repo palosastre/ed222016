@@ -38,7 +38,7 @@ stroke(z, c ,0);
 rect(y,y*4,x*2,y/2);
 
 //elipse 1 (x,y,width, height) vendria siendo el elipse mas grande como si fuera un ojo
-strokeWeight(2);
+strokeWeight(y/10);
 fill(z,z,z);
 ellipse(y*2 + y/2, y*2 + y/2, x, y);
 
