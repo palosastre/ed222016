@@ -10,7 +10,7 @@ Imagen 30
 background(#FFFFFF);
 
 //linea alta bajando a un poco mas de la mitad verticale
-line(0, 0, 70, 30);
+line(0, 0, 70, 30); // cambio hecho
 //linea baja que termina en la esquina derecha
 line(60, 60, 100, 100);
 //elipse baja
