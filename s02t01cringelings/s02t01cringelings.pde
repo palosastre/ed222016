@@ -1,13 +1,10 @@
 // Expresión Digital - Diseño Digital - UDD - 2016
 // Catalina Ringeling Selman
-//s01t01cringelings
+//s02t01cringelings
 
 /*
 Descripción en español de lo que se verá una vez que corra el programa
 */
-
-// Variables: Datos que se determinan al principio. 
-// Ej: int (x) = 20, si tengo algun dato que es 40, pongo x*2
 
 //Declarar Variables de x e y
 int x = 20;
