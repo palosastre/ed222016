@@ -1,3 +1,10 @@
+//Expresión Digital - Diseño Digital - UDD - 2016
+//Benjamin Gutierrez
+//s02t03Benja
+
+/*
+linea blanca saliendo del lado superior, ellipse morada , un cuadrado morado oscuro con borde negro y una linea negra cruzandolo diagonalmente en dirección derecha abajo*/
+
 int x = 20;
 int y = 60;
 int u = 50;
