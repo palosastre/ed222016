@@ -1,38 +1,26 @@
 //Expresión Digital - Diseño Digital - UDD - 2016
 // Ana María Ortiz
-//s02t01anamaria
+//s02t02anamaria
 
-
-//canvas
-void setup() {
 size(1024, 768);
-}
+  color a= color(251,234,46);  //amarillo
+  color c= color(46,215,251);  //calipso
+  float r = random(0, 255);    //random
 
-void draw() {
-for (int x = 0; x <= width; x += 30) {
-  for (int y = 0; y <= height; y += 30) {
-    
-      color a= color(251,234,46);  //amarillo
-      color c= color(46,215,251);  //calipso
-      float r = random(0, 255);    //random
-      
-      fill(r);
-      noStroke();
-      ellipse(x*3, y*5, 50, 50);
-      
-      fill(a);
-      noStroke();
-      ellipse(x*2, y*4, 40, 40);
-      
-      fill(c);
-      stroke (a);
-      ellipse(x*6, y*6, 40, 40);
-      
-      fill(r);
-      noStroke();
-      ellipse(x*3, y*5, 20, 20);
-      
-     
-  }
+for (int x = 0; x < width; x += 100){
+for (int y = 0; y < height; y += 100){
+  
+fill(r);
+noStroke ();
+rect (x, y, x + 100, y + 100);
+
+fill (a);
+stroke (c);
+quad (x + 50, y, x + 100, y + 50, x + 50, y + 100, x, y + 50);
+
+fill (c);
+noStroke ();
+triangle (x + 50, y, x + 50, y + 50, x, y + 50);
+
 }
 }
