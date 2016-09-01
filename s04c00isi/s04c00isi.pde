@@ -26,6 +26,7 @@ color[] colarray = new color[7];   //creo array
 
 
 void setup() {
+  println("certamen01");
   colorMode(HSB, 360, 100, 100);    //modo de color a HSB.
 
   size (900, 1500);                 //tamaño canvas.

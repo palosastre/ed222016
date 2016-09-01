@@ -3,16 +3,16 @@
 //s04c00isi01.
 
 /*Con un doble for loop generar un patrón, en este caso el modulo a repetir es
-una figura compuesta de cuatro triángulos, que en su conjunto forman un cuadrado,
-estos triángulos no tienen linea de contorno y tienen un relleno random dentro de
-un array que se compone por 7 colores distintos. También el patrón contiene un 
+ una figura compuesta de cuatro triángulos, que en su conjunto forman un cuadrado,
+ estos triángulos no tienen linea de contorno y tienen un relleno random dentro de
+ un array que se compone por 7 colores distintos. También el patrón contiene un 
  for loop para una serie de elipses blancas, todas del mismo tamaño y con opacidad
  random en un margen de 40% a 100% de opacidad. Luego vemos un segundo doble for loop
-para el cual creamos una elipse de un tercio del tamaño de la anterior y que se ubicará
-al centro del primer conjunto de elipses y dibujándose elipse por medio. 
-Todos los randoms son solo de números enteros. Por último el código posee un void 
+ para el cual creamos una elipse de un tercio del tamaño de la anterior y que se ubicará
+ al centro del primer conjunto de elipses y dibujándose elipse por medio. 
+ Todos los randoms son solo de números enteros. Por último el código posee un void 
  Keypressed que logra volver a dibujar el patrón al presionar la tecla 'a', guardar 
-como imagen al presionar 's' y salir del programa al presionar cualquier otra tecla.
+ como imagen al presionar 's' y salir del programa al presionar cualquier otra tecla.
  */
 
 
@@ -26,6 +26,7 @@ color[] colarray = new color[7];   //creo array.
 
 
 void setup() {
+  println("certamen01-01");
   colorMode(HSB, 360, 100, 100);    //modo de color a HSB.
 
   size (1200, 600);                 //tamaño canvas.
