@@ -41,7 +41,7 @@ La parte más importante ya que si no está escrito correctamente el programa no
 
 La estructura del código debe contener todas las funciones que se han visto, si se escriben funciones que no se han visto, se preguntará al alumno por una explicación del funcionamiento:
 
-`int` `float` `void setup()` `size();` `void draw()` `point();` `line();` `ellipse();` `rect();`   
+`int` `float` `void setup()` `size();` `void draw()` `point();` `line();` `ellipse();` `rect();`   
 `fill(r, g, b, alpha);` `stroke(r, g, b, alpha);` `noStroke();` `noFill();` `strokeWeight(pixels);` `width` `height` `noLoop();` `random();` `for (init; test; update) {}` `if (test) {código}`
  `else if (test){código}` `else{código}` `keyPressed(){}`
 
