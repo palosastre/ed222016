@@ -15,7 +15,7 @@
  como imagen al presionar 's' y salir del programa al presionar cualquier otra tecla.
  */
 
-
+import processing.pdf.*;    //voy a trabajar con pdf.
 
 float q = 25;     //variable 'q' igual a 20.
 float w = 50;     //variable 'w' igual a 40.
@@ -29,7 +29,7 @@ void setup() {
   println("certamen01-01");
   colorMode(HSB, 360, 100, 100);    //modo de color a HSB.
 
-  size (1200, 600);                 //tamaño canvas.
+  size (1200,1500);                 //tamaño canvas.
 
   background (0, 0, 100);           //color canvas.
 
@@ -47,6 +47,8 @@ void setup() {
 }
 
 void draw() {
+  beginRecord(PDF, "s04/s04c00isi01###.pdf"); //comienza a grabar.
+
   for (int x = 0; x < width; x += w) {        //for loop para eje x.
     for (int y = 0; y < height; y += w) {     //for loop para eje y.
       noStroke();                             //las figuras próximas no tenrán contorno.
@@ -96,6 +98,7 @@ void draw() {
     }
   }
   noLoop();    // imagen fija.
+  endRecord(); //para de grabar.
 }
 
 
