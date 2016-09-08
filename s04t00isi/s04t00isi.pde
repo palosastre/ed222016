@@ -3,14 +3,14 @@
 //s04t00isi. 9 7
 
 /*En este código se ejecuta un doble for loop para una series de elipses, que gracias
-un if y un else se logra que en nuestro canvas se dibujen siempre 9 elipses de ancho
-y 6 de alto, a pesar de que el tamaño del canvas cambie.
-*/
+ un if y un else se logra que en nuestro canvas se dibujen siempre 9 elipses de ancho
+ y 6 de alto, a pesar de que el tamaño del canvas cambie.
+ */
 
 
 
 void setup() {
-  size(100, 100);                        //Tamaño canvas.
+  size(500, 500);                        //Tamaño canvas.
   background(255);                         //Color canvas.
 
   ellipseMode(CENTER);                     //Que las ellipses se dibujen desde su centro.
@@ -21,6 +21,8 @@ void draw() {
   //Variables:   
   int a= width / 8;                         //Variable 'a'.
   int b= height / 6;                        //Variable 'b'.
+  int verde= color(164, 189, 139);          //Variable verde.
+  int amarillo= color(252, 179, 116);       //Variable color amarillo.
 
   int ellipse;                              //Variable "ellipse".
 
@@ -36,8 +38,9 @@ void draw() {
     for (int y = 0; y <= height; y += b) {    //for loop para eje y.
 
       //Ellipse:
-      //strokeWeight(1);                      //línea de contorno.                        
-      //fill(255);                            //relleno.
+      stroke(amarillo);
+      //strokeWeight();                      //línea de contorno.                        
+      fill(verde);                            //relleno.
       ellipse(x, y, ellipse, ellipse);        //posición y tamaño elipse.
     }
   }
