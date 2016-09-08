@@ -1,5 +1,5 @@
-// Expresión Digital - Diseño Digital - UDD - 2016
-// NRicardo Vidal Lynch
+// Expresión Digital II - Diseño Digital - UDD - 2016
+// Ricardo Vidal Lynch
 // s04c00lynch00
 
 int lin2 = width/6; // error extraño, division mal hecha
