@@ -29,9 +29,9 @@ void setup() {
   println("certamen01");
   colorMode(HSB, 360, 100, 100);    //modo de color a HSB.
 
-  size (600, 750);                 //tamaño canvas.
+  size(600, 750);                 //tamaño canvas.
 
-  background (0, 0, 100);           //color canvas.
+  background(0, 0, 100);           //color canvas.
 
   c = color(colarray[(int)random(0, 4)]);      //variable 'c' es igual al color array.
 
@@ -53,47 +53,47 @@ void draw() {
       noStroke();                                        //las figuras próximas no tenrán contorno.
 
       //triángulo 1 (arriba):
-      fill (c);                                          //asigno valor random a relleno.
-      triangle (x, y, x+q, y+q, x+w, y);           // creo triángulo 1.
+      fill(c);                                          //asigno valor random a relleno.
+      triangle(x, y, x + q, y + q, x + w, y);           // creo triángulo 1.
 
       //triángulo 2 (izquieda):  
-      c= colarray [ (int) random (7) ];                  //llamo nuevamente variable color random.
-      fill (c);                                          //asigno valor random a relleno.
-      triangle (x, y, x+q, y+q, x, y+w);           // creo triángulo 2.
+      c = colarray [ (int) random(7) ];                  //llamo nuevamente variable color random.
+      fill(c);                                          //asigno valor random a relleno.
+      triangle(x, y, x + q, y + q, x, y + w);           // creo triángulo 2.
 
       //triángulo 3 (derecha):    
-      c= colarray [ (int) random (7) ];                  //llamo nuevamente variable color random.
-      fill (c);                                          //asigno valor random a relleno.
-      triangle ( x+w, y, x+q, y+q, x+w, y+w);  // creo triángulo 3.
+      c = colarray [ (int) random(7) ];                  //llamo nuevamente variable color random.
+      fill(c);                                          //asigno valor random a relleno.
+      triangle(x + w, y, x + q, y + q, x + w, y + w);  // creo triángulo 3.
 
       //triángulo 4 (abajo):    
-      c= colarray [ (int) random (7) ];                    //llamo nuevamente variable color random.
-      fill (c);                                            //asigno valor random a relleno.
-      triangle ( x, y+w, x+q, y+q, x+w, y+w);   // creo triángulo 4.
+      c = colarray [ (int) random(7) ];                    //llamo nuevamente variable color random.
+      fill(c);                                            //asigno valor random a relleno.
+      triangle(x, y + w, x + q, y + q, x + w, y + w);   // creo triángulo 4.
 
 
       //elipse 
-      c = colarray [ (int) random (6) ];             //llamo nuevamente variable color random.
-      fill (blanco, (int) random (40, 100));         // asigno valor random a relleno.
-      ellipse (x+q, y+q, w, w);                  //creo una elipse.
+      c = colarray [ (int) random(6) ];             //llamo nuevamente variable color random.
+      fill(blanco, (int) random(40, 100));         // asigno valor random a relleno.
+      ellipse(x + q, y + q, w, w);                  //creo una elipse.
     }
   }
 
   for (int x = 0; x < width; x += w + w) {           //for loop para eje x.
     for (int y = 0; y < height; y += w + w) {        //for loop para eje y.
       //elipse 
-      c = colarray [ (int) random (6) ];             //llamo nuevamente variable color random.
-      fill (blanco, (int) random (40, 100));         // asigno valor random a relleno.
-      ellipse (x+q, y+q, w/3, w/3);          //creo una elipse.
+      c = colarray [ (int) random(6) ];             //llamo nuevamente variable color random.
+      fill(blanco, (int) random(40, 100));         // asigno valor random a relleno.
+      ellipse(x + q, y + q, w / 3, w / 3);          //creo una elipse.
     }
   }
 
   for (int x = 50; x < width; x += w + w) {           //for loop para eje x.
     for (int y = 50; y < height; y += w + w) {        //for loop para eje y.
       //elipse 
-      c = colarray [ (int) random (6) ];              //llamo nuevamente variable color random.
-      fill (blanco, (int) random (20, 50));           // asigno valor random a relleno.
-      ellipse (x+q, y+q, w/3, w/3);           //creo una elipse.
+      c = colarray [ (int) random(6) ];              //llamo nuevamente variable color random.
+      fill(blanco, (int) random(20, 50));           // asigno valor random a relleno.
+      ellipse(x + q, y + q, w / 3, w / 3);           //creo una elipse.
     }
   }
   noLoop();    //imagen fija.
@@ -107,7 +107,7 @@ void keyPressed() {
     redraw();            //se vuelve a dibujar.
     //condicional 2:
   } else if ( key == 's' ) {              //si apreto la tecla 's' se guarda.
-    saveFrame ( "s04/s04c00isi###.pdf" );   //se guarda con este nombre.
+    saveFrame( "s04/s04c00isi###.pdf" );   //se guarda con este nombre.
     //condicional 3:
   } else {               // si no se cumple la condicional 1 o 2...
     exit();              //cierro el programa.
