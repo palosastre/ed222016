@@ -1,10 +1,10 @@
-//Expreción digital - Diseño Digital - UDD- 2016
+//Expresión digital II - Diseño Digital - UDD- 2016
 //Isidora Ordoñez
 //s04c00isi.
 
-/*Con un doble for loop generar un patrón, en este caso el modulo a repetir es
+/*Con un doble for loop generar un patrón, en este caso el módulo a repetir es
  una figura compuesta de cuatro triángulos, que en su conjunto forman un cuadrado,
- estos triángulos no tienen linea de contorno y tienen un relleno random dentro de
+ estos triángulos no tienen línea de contorno y tienen un relleno random dentro de
  un array que se compone por 7 colores distintos. También el patrón contiene un 
  for loop para una serie de elipses blancas, todas del mismo tamaño y con opacidad
  random en un margen de 40% a 100% de opacidad. Luego vemos un segundo doble for loop
