@@ -36,7 +36,7 @@ void setup() {
 
 void draw() {
   
-  frameRate(4);                         //velocidad frames.
+  frameRate(0);                         //velocidad frames.
   background (blanco);                  //color canvas.
  
 
@@ -48,7 +48,7 @@ void draw() {
       /*ellipse*/
       opa= random (100, 255);                                       //asigno valores a opa.
       diametro= random (2, 15);                                     //asigno valor random para la variable diametro.   
-      stroke (2);                                                   //linea de contorno de 2 px.
+      noStroke ();                                                   //linea de contorno de 2 px.
       fill (amarillo, opa);                                         //relleno figura amarillo.
       ellipse ( posX * i + i, posY * x + x, diametro, diametro);    //elipse con posición fija y diametro random.
       
@@ -56,7 +56,7 @@ void draw() {
       /*Cuadrado*/
       opa= random (90, 200);                                      //asigno nuevo valor a opa.
       diametro= random( 15, 35);                                  //asigno nuevo valor a random a diametro.
-      stroke (1);                                                 //linea de contorno de 1 px.
+      noStroke ();                                                 //linea de contorno de 1 px.
       fill (verde, opa);                                          //relleno cuadrado verde.
       rect ( posZ * i + i, posZ * x + x, diametro, diametro);     // cuadrado de posición fija y diametro random.
       
