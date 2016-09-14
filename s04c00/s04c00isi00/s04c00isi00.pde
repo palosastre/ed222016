@@ -18,7 +18,7 @@
 import processing.pdf.*;     //voy a trabajar con pdf,
 
 float q = 25;     //variable 'q' igual a 20.
-float w = 50;     //variable 'w' igual a 40.
+float w = 50;     //variable 'w' igual a 50.
 int c;            //creo variable 'c'.
 int blanco;
 
