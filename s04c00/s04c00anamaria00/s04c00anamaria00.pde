@@ -11,7 +11,7 @@ float r, q;                                  //variables
 int w, update;                               //numeros enteros
 
 
-void setup () {
+void setup() {
   size(800, 1000);                             //tamaño del canvas
 
   colorMode(HSB, 360, 100, 100);                  //modo de color
@@ -28,7 +28,7 @@ void setup () {
   update = 50;                                 //valor update
 }
 
-void draw () {
+void draw() {
   beginRecord(PDF, "s04c00anamaria###.pdf");
   background(gc);                            //color del fondo
 
@@ -37,27 +37,27 @@ void draw () {
       float p = random(3);                      //variable random de 0 a 3
 
       if (p>1) {                                 //si la condición p es mayor a 1, se dibujará el rombo, el punto y el triángulo gris
-        noFill ();                                   //sin relleno
-        strokeWeight (3);                            //stroke grosor 3px
-        stroke (go);                                 //stroke color gris oscruo
-        quad (x + q, y, x + w, y + q, x + q, y + w, x, y + q); //rombo en el centro del modulo
+        noFill();                                   //sin relleno
+        strokeWeight(3);                            //stroke grosor 3px
+        stroke(go);                                 //stroke color gris oscruo
+        quad(x + q, y, x + w, y + q, x + q, y + w, x, y + q); //rombo en el centro del modulo
 
-        strokeWeight (5);                            //stroke grosor 5px
-        stroke (ao);                                 //stroke color amarillo oscuro
-        point (x + 10, y + 10);                      //punto en el centro del rombo
+        strokeWeight(5);                            //stroke grosor 5px
+        stroke(ao);                                 //stroke color amarillo oscuro
+        point(x + 10, y + 10);                      //punto en el centro del rombo
 
 
-        fill (gmo);                                  //relleno color gris mas oscuro
-        noStroke ();                                 //sin stroke
-        triangle (x, y - 15, x - 15, y - 15, x - 15, y); //triángulo esquina superior izquierda
+        fill(gmo);                                  //relleno color gris mas oscuro
+        noStroke();                                 //sin stroke
+        triangle(x, y - 15, x - 15, y - 15, x - 15, y); //triángulo esquina superior izquierda
       } else if (p < 1) {                         //en el caso de que p sea menor que 1, se dibujará el triángulo amarillo
-        fill (ao);                                   //relleno color amarillo oscruo 
-        noStroke ();                                 //sin stroke
-        triangle (x + 10, y, x + 10, y + 10, x, y + 10); //triángulo 
+        fill(ao);                                   //relleno color amarillo oscruo 
+        noStroke();                                 //sin stroke
+        triangle(x + 10, y, x + 10, y + 10, x, y + 10); //triángulo 
 
-        strokeWeight (2);                            //stroke grosor 2px
-        stroke (ao);                                 //stroke color amrillo oscuro
-        line (x - 10, y - 10, x + 5, y + 5);         //posición de la línea
+        strokeWeight(2);                            //stroke grosor 2px
+        stroke(ao);                                 //stroke color amrillo oscuro
+        line(x - 10, y - 10, x + 5, y + 5);         //posición de la línea
       }
     }
   }
