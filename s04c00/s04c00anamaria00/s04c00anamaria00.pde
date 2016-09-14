@@ -7,8 +7,8 @@
 import processing.pdf.*;
 
 color ao, gc, go, gmo;                       //colores
-float r, q;                                  //variables    
-int w, update;                               //números enteros
+float r, q;                                  //variables de que?    
+int w, update;                               //números enteros para qué?
 
 
 void setup() {
@@ -29,14 +29,14 @@ void setup() {
 }
 
 void draw() {
-  beginRecord(PDF, "s04c00anamaria###.pdf");
+  beginRecord(PDF, "s04c00anamaria###.pdf"); //falta este comentario
   background(gc);                            //color del fondo
 
   for (int x = 20; x < width; x += update) {    //si x es menor que el ancho del canvas, se le sumará el valor del update
     for (int y = 20; y < height; y += update) {   //si y es menor que el largo del canvas, se le sumará el valor del update
       float p = random(3);                      //variable random de 0 a 3
 
-      if (p>1) {                                 //si la condición p es mayor a 1, se dibujará el rombo, el punto y el triángulo gris
+      if (p > 1) {                                 //si la condición p es mayor a 1, se dibujará el rombo, el punto y el triángulo gris
         noFill();                                   //sin relleno
         strokeWeight(3);                            //stroke grosor 3px
         stroke(go);                                 //stroke color gris oscuro
@@ -62,7 +62,7 @@ void draw() {
     }
   }
   noLoop();                                    //hace que no se repita todo el tiempo
-  endRecord();                                 //
+  endRecord();                                 //falta este comentario
 }  
 
 void keyPressed() {                          
