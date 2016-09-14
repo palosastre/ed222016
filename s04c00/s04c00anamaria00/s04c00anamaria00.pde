@@ -46,10 +46,10 @@ void draw() {
         stroke(ao);                                 //stroke color amarillo oscuro
         point(x + 10, y + 10);                      //punto en el centro del rombo
 
-
         fill(gmo);                                  //relleno color gris más oscuro
         noStroke();                                 //sin stroke
         triangle(x, y - 15, x - 15, y - 15, x - 15, y); //triángulo esquina superior izquierda
+        
       } else if (p < 1) {                         //en el caso de que p sea menor que 1, se dibujará el triángulo amarillo
         fill(ao);                                   //relleno color amarillo oscuro 
         noStroke();                                 //sin stroke
