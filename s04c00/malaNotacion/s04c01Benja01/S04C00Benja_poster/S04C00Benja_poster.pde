@@ -7,7 +7,7 @@ No existe nada respecto a una descripción general de resultado ni de uso
 */
 
 import processing.pdf.*;
-int N = 0;
+int N = 0; // debe ser n minúscula
 color ellie;
 
 void setup() {
