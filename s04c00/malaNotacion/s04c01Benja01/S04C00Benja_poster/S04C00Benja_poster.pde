@@ -2,13 +2,17 @@
 //Benjamin Gutierrez
 // s04c00
 
+/*
+No existe nada respecto a una descripción general de resultado ni de uso
+*/
+
 import processing.pdf.*;
 int N = 0;
 color ellie;
 
 void setup() {
 // ocupo un framrate de 10 para el patrón,
-//el tamaño del canvas es de 1024, 768 y use HSB para
+// el tamaño del canvas es de 1024, 768 y use HSB para
 // los colores en vez de usar RGB
   frameRate(10);
   size(900, 1500);
@@ -18,13 +22,15 @@ void setup() {
 
 void draw() {
  //desde el primer "if" son ellipses con líneas 
-  //superpuestas, que cruzan por la mitad de estas elipses.
+ //superpuestas, que cruzan por la mitad de estas elipses.
+//esta descripción no es completa, debido al segundo doble-for-loop
   
  beginRecord(PDF, "folder/s04c00Benja###.pdf");
  background(253);
  if (N==0) {
     background(0);
     strokeWeight(1);
+    //falta comentario específico de cada bloque de texto o cada línea
     for (int x = 0; x < width; x +=30) {
       for (int y = 0; y < height; y +=30) {
         fill(174, 100, 65);
@@ -32,7 +38,8 @@ void draw() {
         ellipse(x, y, r, r);
       }
     }
-
+    //este
+    //falta comentario específico de cada bloque de texto o cada línea
     for (int x = 0; x <= width; x +=50) {
       for (int y = 0; y <= height; y +=50) {
         fill(random(255),random(50),random(100));
@@ -40,22 +47,25 @@ void draw() {
         ellipse(x, y, r, r);
       }
     }
-
+    //falta comentario específico de cada bloque de texto o cada línea  
     for (int x = 0; x <= width; x +=60) {
       for (int y = 0; y <= height; y +=60) {
         line(x, y, x-30, y-30);
       }
     }
+    //falta comentario específico de cada bloque de texto o cada línea
     for (int x = 0; x <= width; x +=90) {
       for (int y = 0; y <= height; y +=90) {
         line(30+x, 30+y, x-30, y-30);
       }
     }
+    //falta comentario específico de cada bloque de texto o cada línea
     for (int x = 0; x <= width; x +=60) {
       for (int y = 0; y <= height; y +=60) {
         line(x, y, x-30, y-30);
       }
     }
+    //falta comentario específico de cada bloque de texto o cada línea
     for (int x = 0; x <= height; x +=30) {
       for (int y = 0; y <= width; y +=30) {
         line(x, y, x-30, y-30);
@@ -65,7 +75,9 @@ void draw() {
   //comienza un segundo patrón que incluye un random, el que
   //produce una suerte de oleaje con las elipses, más unas elipses
   //estáticas con líneas cruzándolas.
-  {  for (int x = 0; x <= width; x +=15) {
+  {  
+    //falta comentario específico de cada bloque de texto o cada línea
+    for (int x = 0; x <= width; x +=15) {
       for (int y = 0; y <= height; y +=15) {
         fill(174, 236, 65);
         float r = random(15, 30);
@@ -74,6 +86,7 @@ void draw() {
         ellipse(x, y, r, r);
       }
     }   
+    //falta comentario específico de cada bloque de texto o cada línea
     for (int x = 0; x <= width; x +=60) {
       for (int y = 0; y <= height; y +=60) {
         fill(96, 59, 133);
@@ -81,6 +94,7 @@ void draw() {
         ellipse(x, y, r, r);
       }
     }
+    //falta comentario específico de cada bloque de texto o cada línea
     for (int x = 0; x <= width; x +=90) {
       for (int y = 0; y <= height; y +=90) {
         fill(96, 59, 133);
@@ -89,6 +103,7 @@ void draw() {
         ellipse(x, y, r, r);
       }
     }
+    //falta comentario específico de cada bloque de texto o cada línea
     for (int x = 0; x <= width; x +=90) {
       for (int y = 0; y <= height; y +=90) {
         stroke(5);
@@ -96,6 +111,7 @@ void draw() {
         line(30+x, 30+y, x-30, y-30);
       }
     }
+    //falta comentario específico de cada bloque de texto o cada línea
     for (int x = 0; x <= width; x +=90) {
       for (int y = 0; y <= height; y +=90) {
         strokeWeight(10);
@@ -115,6 +131,7 @@ void draw() {
 void keyPressed() {
 //presionar letra "n" para cambiar el patrón, y apretar
 //"s" para guardar uan imagen ene formato .pdf del patrón
+//falta comentario específico de cada bloque de texto o cada línea
  if(key=='q'){
    exit();}
    
