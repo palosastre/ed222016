@@ -44,6 +44,7 @@ void draw(){
 	  for(j = 0; j < height + 100; j += 100) {
 
 	//random de 4 colores con array para los cuadriláteros grandes
+	//declarar e inicializar dentro del void draw
 	  	int random = (int) random(4);
 	    int colorh = h[random];
 	    int colors = s[random];
@@ -55,6 +56,10 @@ void draw(){
 	  	quad(i + 50, j, i + 100, j + 50, i + 50, j + 100, i, j + 50);
 
 	//random de 4 colores con array para los cuadriláteros chicos
+	/* declarar e inicializar dentro del void draw un nuevo grupo 
+	de variables para el mismo objetivo, lo correcto es solamente 
+	cambiar el valor de ellas.
+	*/
 	  	int random2 = (int) random(4); 
 	    int colorh2 = h[random2];
 	    int colors2 = s[random2];
