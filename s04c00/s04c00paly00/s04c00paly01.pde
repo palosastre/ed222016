@@ -90,11 +90,11 @@ entrecruzadas en el centro de los cuadriláteros grandes*/
 
 
 void keyPressed() {
- if (key == 'n'){
+ if (key == 'n') {
    redraw();
- }else if (key == 'q'){
+ } else if (key == 'q') {
    exit();
-   }else if (key == 's'){
+   } else if (key == 's') {
      saveFrame("frames/s04c00paly###.pdf");
  }
 }
