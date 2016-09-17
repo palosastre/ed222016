@@ -10,12 +10,18 @@ void setup(){
  background(#ffffff);                          //pintar de color blanco el fondo
  
 /*
+No existe descripción de qué hace el programa ni cómo se usa.
+*/
+
+/*
  CÓDIGO DE COLORES USADOS
  rojo claro = color(346, 98, 76);
  rojo oscuro = color(340, 84, 55);
  morado claro = color(286, 63, 27);
  morado oscuro = color(285, 65, 21);
 */
+// buen uso del bloque de comentarios para saber qué colores se usarán con notación en español
+// el error está en que debieron ser declarados e inicializados con nombres similares rojo claro = rojo_claro
 
 }
 
@@ -37,7 +43,7 @@ void draw(){
 	  for(j = 0; j < height + 100; j += 100) {
 
 	//random de 4 colores con array para los cuadriláteros grandes
-	  	int random = (int) random (4);
+	  	int random = (int) random(4);
 	    int colorh = h[random];
 	    int colors = s[random];
 	    int colorb = b[random];
@@ -48,7 +54,7 @@ void draw(){
 	  	quad(i + 50, j, i + 100, j + 50, i + 50, j + 100, i, j + 50);
 
 	//random de 4 colores con array para los cuadriláteros chicos
-	  	int random2 = (int) random (4); 
+	  	int random2 = (int) random(4); 
 	    int colorh2 = h[random2];
 	    int colors2 = s[random2];
 	    int colorb2 = b[random2];
@@ -90,11 +96,11 @@ void draw(){
 
 
 void keyPressed() {
- if (key == 'n') {
+ if (key == 'n') { // no hay descripción de qué hace cada letra.
    redraw();
- } else if (key == 'q') {
+ } else if (key == 'q') { // no hay descripción de qué hace cada letra.
    exit();
-   } else if (key == 's') {
+   } else if (key == 's') { // no hay descripción de qué hace cada letra.
      saveFrame("frames/s04c00paly###.pdf");
  }
 }
