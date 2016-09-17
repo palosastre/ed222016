@@ -30,7 +30,8 @@ void draw(){
   beginRecord(PDF, "frames/s04c00paly###.pdf");
 
 //declarar variables
-  int i;
+// declaración de variables globales dentro de este loop para su uso dentro de otro
+  int i; 
   int j;
 
 //array de colores HSB para luego crear un random
