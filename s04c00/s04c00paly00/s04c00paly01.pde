@@ -106,7 +106,7 @@ void keyPressed() {
    redraw();
  } else if (key == 'q') { // no hay descripción de qué hace cada letra.
    exit();
-   } else if (key == 's') { // no hay descripción de qué hace cada letra.
+ } else if (key == 's') { // no hay descripción de qué hace cada letra.
      saveFrame("frames/s04c00paly###.pdf");
  }
 }
