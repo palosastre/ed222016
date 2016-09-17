@@ -45,7 +45,7 @@ for(i = 0; i < width + 100; i += 100){
 //cuadrilátero, sin borde de random de color
   noStroke();
   fill(colorh, colors, colorb);
-  quad(i+50, j, i+100, j+50, i+50, j+100, i, j+50);
+  quad(i + 50, j, i + 100, j + 50, i + 50, j + 100, i, j + 50);
 
 //random de 4 colores con array para los cuadriláteros chicos
   int random2 = (int) random (4); 
@@ -57,19 +57,19 @@ for(i = 0; i < width + 100; i += 100){
 entrecruzadas en el centro de los cuadriláteros grandes*/
   stroke(#ffffff, 50);
   strokeWeight(2);
-  line(i, j, i+100, j+100);
-  line(i, j+100, i+100, j);
+  line(i, j, i + 100, j + 100);
+  line(i, j + 100, i + 100, j);
   
 //cuadrilátero chico, sin borde con random de color
   noStroke();
   fill(colorh2, colors2, colorb2);
-  quad(i, j-25, i+25, j, i, j+25, i-25, j);
+  quad(i, j - 25, i + 25, j, i, j + 25, i - 25, j);
     
 //círculos con transparencia de 80% en las esquinas de los cuadriláteros grandes
   noStroke();
   fill(#ffffff, 80);
-  ellipse(i+50, j, 25, 25);
-  ellipse(i, j+50, 25, 25);
+  ellipse(i + 50, j, 25, 25);
+  ellipse(i, j + 50, 25, 25);
 
 //puntos con transparencia de 80% en el centro de los cuadriláteros chicos
   stroke(#ffffff, 50);
@@ -79,7 +79,7 @@ entrecruzadas en el centro de los cuadriláteros grandes*/
 //cuatrilatero chico blanco en el centro del cuadrilátero grande
   noStroke();
   fill(#ffffff);
-  quad(i+50, j+25, i+75, j+50, i+50, j+75, i+25, j+50);
+  quad(i + 50, j + 25, i + 75, j + 50, i + 50, j + 75, i + 25, j + 50);
  
   }
 }
