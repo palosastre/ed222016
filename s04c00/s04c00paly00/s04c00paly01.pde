@@ -1,6 +1,6 @@
-// Expresión Digital - Diseño Digital - UDD - 2016
+// Expresión Digital II - Diseño Digital - UDD - 2016
 // Paulina Descouvieres
-// s04c00paly00
+// s04c00paly01
 
 import processing.pdf.*;                       //indicar que se trabajará en PDF
 
@@ -36,31 +36,31 @@ void draw(){
 for(i = 0; i < width + 100; i += 100){ 
   for(j = 0; j < height + 100; j += 100) {
 
-//random de 4 colores con array para los cuadrilateros grandes
+//random de 4 colores con array para los cuadriláteros grandes
   int random = (int) random (4);
     int colorh = h[random];
     int colors = s[random];
     int colorb = b[random];
 
-//cuadrilatero, sin borde de random de color
+//cuadrilátero, sin borde de random de color
   noStroke();
   fill(colorh, colors, colorb);
   quad(i+50, j, i+100, j+50, i+50, j+100, i, j+50);
 
-//random de 4 colores con array para los cuadrilateros chicos
+//random de 4 colores con array para los cuadriláteros chicos
   int random2 = (int) random (4); 
     int colorh2 = h[random2];
     int colors2 = s[random2];
     int colorb2 = b[random2];
 
-/*lineas blancas con transparencia de 50%
-entrecruzadas en el centro de los cuadrilateros grandes*/
+/*líneas blancas con transparencia de 50%
+entrecruzadas en el centro de los cuadriláteros grandes*/
   stroke(#ffffff, 50);
   strokeWeight(2);
   line(i, j, i+100, j+100);
   line(i, j+100, i+100, j);
   
-//cuadrilatero chico, sin borde con random de color
+//cuadrilátero chico, sin borde con random de color
   noStroke();
   fill(colorh2, colors2, colorb2);
   quad(i, j-25, i+25, j, i, j+25, i-25, j);
@@ -76,7 +76,7 @@ entrecruzadas en el centro de los cuadrilateros grandes*/
   strokeWeight(5);
   point(i, j);
 
-//cuatrilatero chico blanco en el centro del cuadrilatero grande
+//cuatrilatero chico blanco en el centro del cuadrilátero grande
   noStroke();
   fill(#ffffff);
   quad(i+50, j+25, i+75, j+50, i+50, j+75, i+25, j+50);
