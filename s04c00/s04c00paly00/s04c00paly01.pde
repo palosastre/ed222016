@@ -33,56 +33,56 @@ void draw(){
   int[] b = {76, 55, 27, 21};
 
 //doble for loop que determina la posición de i y j dentro del plano cartesiano
-for(i = 0; i < width + 100; i += 100){ 
-  for(j = 0; j < height + 100; j += 100) {
+	for(i = 0; i < width + 100; i += 100){ 
+	  for(j = 0; j < height + 100; j += 100) {
 
-//random de 4 colores con array para los cuadriláteros grandes
-  	int random = (int) random (4);
-    int colorh = h[random];
-    int colors = s[random];
-    int colorb = b[random];
+	//random de 4 colores con array para los cuadriláteros grandes
+	  	int random = (int) random (4);
+	    int colorh = h[random];
+	    int colors = s[random];
+	    int colorb = b[random];
 
-//cuadrilátero, sin borde de random de color
-  	noStroke();
-  	fill(colorh, colors, colorb);
-  	quad(i + 50, j, i + 100, j + 50, i + 50, j + 100, i, j + 50);
+	//cuadrilátero, sin borde de random de color
+	  	noStroke();
+	  	fill(colorh, colors, colorb);
+	  	quad(i + 50, j, i + 100, j + 50, i + 50, j + 100, i, j + 50);
 
-//random de 4 colores con array para los cuadriláteros chicos
-  	int random2 = (int) random (4); 
-    int colorh2 = h[random2];
-    int colors2 = s[random2];
-    int colorb2 = b[random2];
+	//random de 4 colores con array para los cuadriláteros chicos
+	  	int random2 = (int) random (4); 
+	    int colorh2 = h[random2];
+	    int colors2 = s[random2];
+	    int colorb2 = b[random2];
 
-/*líneas blancas con transparencia de 50%
-entrecruzadas en el centro de los cuadriláteros grandes*/
-  	stroke(#ffffff, 50);
-  	strokeWeight(2);
-  	line(i, j, i + 100, j + 100);
-  	line(i, j + 100, i + 100, j);
-  
-//cuadrilátero chico, sin borde con random de color
-	  noStroke();
-	  fill(colorh2, colors2, colorb2);
-	  quad(i, j - 25, i + 25, j, i, j + 25, i - 25, j);
-    
-//círculos con transparencia de 80% en las esquinas de los cuadriláteros grandes
-  	noStroke();
-  	fill(#ffffff, 80);
-  	ellipse(i + 50, j, 25, 25);
-  	ellipse(i, j + 50, 25, 25);
+	/*líneas blancas con transparencia de 50%
+	entrecruzadas en el centro de los cuadriláteros grandes*/
+	  	stroke(#ffffff, 50);
+	  	strokeWeight(2);
+	  	line(i, j, i + 100, j + 100);
+	  	line(i, j + 100, i + 100, j);
+	  
+	//cuadrilátero chico, sin borde con random de color
+		  noStroke();
+		  fill(colorh2, colors2, colorb2);
+		  quad(i, j - 25, i + 25, j, i, j + 25, i - 25, j);
+	    
+	//círculos con transparencia de 80% en las esquinas de los cuadriláteros grandes
+	  	noStroke();
+	  	fill(#ffffff, 80);
+	  	ellipse(i + 50, j, 25, 25);
+	  	ellipse(i, j + 50, 25, 25);
 
-//puntos con transparencia de 80% en el centro de los cuadriláteros chicos
-  	stroke(#ffffff, 50);
-  	strokeWeight(5);
-  	point(i, j);
+	//puntos con transparencia de 80% en el centro de los cuadriláteros chicos
+	  	stroke(#ffffff, 50);
+	  	strokeWeight(5);
+	  	point(i, j);
 
-//cuatrilátero chico blanco en el centro del cuadrilátero grande
-  	noStroke();
-  	fill(#ffffff);
-  	quad(i + 50, j + 25, i + 75, j + 50, i + 50, j + 75, i + 25, j + 50);
- 
-  }
-}
+	//cuatrilátero chico blanco en el centro del cuadrilátero grande
+	  	noStroke();
+	  	fill(#ffffff);
+	  	quad(i + 50, j + 25, i + 75, j + 50, i + 50, j + 75, i + 25, j + 50);
+	 
+	  }
+	}
   noLoop();              //función que detiene el loop
   endRecord();
 }
