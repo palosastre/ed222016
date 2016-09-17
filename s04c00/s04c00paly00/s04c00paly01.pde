@@ -76,7 +76,7 @@ entrecruzadas en el centro de los cuadriláteros grandes*/
   strokeWeight(5);
   point(i, j);
 
-//cuatrilatero chico blanco en el centro del cuadrilátero grande
+//cuatrilátero chico blanco en el centro del cuadrilátero grande
   noStroke();
   fill(#ffffff);
   quad(i + 50, j + 25, i + 75, j + 50, i + 50, j + 75, i + 25, j + 50);
