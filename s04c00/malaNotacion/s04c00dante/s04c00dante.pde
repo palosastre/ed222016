@@ -16,6 +16,7 @@ void setup() {          //  Función que se ejecuta al principio una sola vez
 
   size(600,750);         // Se crea un canvas de medidas 600x750 px - era otro valor
   background(#FFFFFF);    //Se pone un fondo de color blanco
+  // Esto no se cumple NUNCA, al tener `no loop()` la función frameRate queda inválida. 
   frameRate(3);         //Se dibuja medio cuadro por cada segundo - se dibujan 3 cuadros por cada segundo
   colorMode(HSB, 360, 100, 100);  //los colores a utilizar serán con el modo HSB
 }
