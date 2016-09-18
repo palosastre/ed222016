@@ -14,9 +14,9 @@ Una vez que corre el programa se dibujarán una serie de figuras (elipses, líne
 import processing.pdf.*;
 void setup() {          //  Función que se ejecuta al principio una sola vez
 
-  size(600,750);         // Se crea un canvas de medidas 600x750 px
+  size(600,750);         // Se crea un canvas de medidas 600x750 px - era otro valor
   background(#FFFFFF);    //Se pone un fondo de color blanco
-  frameRate(3);         //Se dibuja medio cuadro por cada segundo
+  frameRate(3);         //Se dibuja medio cuadro por cada segundo - se dibujan 3 cuadros por cada segundo
   colorMode(HSB, 360, 100, 100);  //los colores a utilizar serán con el modo HSB
 }
 void draw() {        // función que dibuja, y se repite solamente si es que se presiona la tecla r
@@ -91,11 +91,11 @@ void draw() {        // función que dibuja, y se repite solamente si es que se 
       strokeWeight(0.3);  //el grosor de línea desde ahora será de 0.3px
       line(x, y, x + 120, y + 120);   //se dibujará un línea diagonal desde la esquina superior izquierda a la inferior derecha del módulo
       line(x, y + 120, x + 120, y);   //se dibujará un línea diagonal desde la esquina superior derecha a la inferior izquierda del módulo
-      if (r < 15 && r > 25) {   //si es que la variable r es menor a 15 ó es mayor a 25 se ejecutará lo siguiente
+      if (r < 15 && r > 25) {   //si es que la variable r es menor a 15 ó es mayor a 25 se ejecutará lo siguiente - La condicional && es de 'y'
         noFill();//desde ahora las figuras no tendrán relleno
         noStroke(); // desde ahora no se dibujarán las líneas
         ellipse(x + 60, y + 60, r, r); // se dibuja una elipse en el centro de la figura con diámetro igual al valor asignado por el random dentro de la variable r
-      } else if (r > 5 && r < 35) {   // si no se cumple la condición anterior, y r es mayor que 5 ó r es menor que 35 que se ejecute lo siguiente
+      } else if (r > 5 && r < 35) {   // si no se cumple la condición anterior, y r es mayor que 5 ó r es menor que 35 que se ejecute lo siguiente - La condicional && es de 'y'
         strokeWeight(3); //el grosor de línea será de 3px
       } else { //si no ocurre ninguna de las condiciones anteriores que ocurra lo siguiente
         fill(323, 49, 77); // el relleno de las figuras desde ahora será rosado oscuro
@@ -112,7 +112,7 @@ void draw() {        // función que dibuja, y se repite solamente si es que se 
 
 void keyPressed() {  // se crea la función keyPressed
   if (key == 'e') { // si se presiona la tecla e ocurrirá lo siguiente
-    exit();    //// salir
+    exit();    // salir
   } else if (key == 'r') { // si la condición anterior no se cumple y se presiona la tecla "r", se volverá a ejecutar la función void draw
     redraw(); // se volverá a ejecutar la función void draw
   }
