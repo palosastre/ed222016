@@ -26,7 +26,6 @@ void draw() {        // función que dibuja, y se repite solamente si es que se 
   for (int x = 0; x < width; x += 120) { //mientras la nueva variable x sea menor que el ancho, se ejecutará el código de abajo e irá sumando 120 a x cada vez.
     for (int y = 15; y < height; y += 120) { //mientras la nueva variable y sea menor que el ancho, se ejecutará el código de abajo e irá sumando 120 a y cada vez.
       fill(270, 12, 99);   //el color de relleno desde ahora será violeta claro.
-      float r = random(40);  //se crea la variable "r" que es igual a un random decimal que puede ir entre 0 y 40.
       strokeWeight(1);  //el grosor de línea será 1
       stroke(330, 45, 99);  //el color de línea será rosado claro
       rect(x, y, x + 120, y + 120); //se dubuja un cuadrado con el origen en la esquina superior izquierda, de tamaño 120 px, que será el tamaño de los módulos.
@@ -92,6 +91,9 @@ void draw() {        // función que dibuja, y se repite solamente si es que se 
       strokeWeight(0.3);  //el grosor de línea desde ahora será de 0.3px
       line(x, y, x + 120, y + 120);   //se dibujará un línea diagonal desde la esquina superior izquierda a la inferior derecha del módulo
       line(x, y + 120, x + 120, y);   //se dibujará un línea diagonal desde la esquina superior derecha a la inferior izquierda del módulo
+      
+      // Declarar e inicializar una variable antes de ser usada es lo correcto en una buena práctica.
+      float r = random(40);  //se crea la variable "r" que es igual a un random decimal que puede ir entre 0 y 40.
       // Esta condición no se cumple nunca, porque para que sea verdadera, r tendría que ir entre 14 y dar la vuelta hacia todos los números negativos y llegar al 26
       if (r < 15 && r > 25) {   //si es que la variable r es menor a 15 ó es mayor a 25 se ejecutará lo siguiente - La condicional && es de 'y'
         noFill();//desde ahora las figuras no tendrán relleno
