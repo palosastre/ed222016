@@ -104,9 +104,9 @@ void draw() {        // función que dibuja, y se repite solamente si es que se 
     }
   }
   rect(0, 0, width, 15);
-rect(0, height-15, width, height);
+  rect(0, height-15, width, height);
   noLoop(); //la función void draw no se reiniciará cada vez que termine el código a menos que se presione la tecla "r"
-endRecord(); // se deja de guardar
+  endRecord(); // se deja de guardar
 }
 
 
