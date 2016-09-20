@@ -1,6 +1,6 @@
 //Expresión Digital II - Diseño Digital - UDD - 2016
 // M. Elena Errázuriz
-//s03c01elenaerrazuriz00
+//s03c00elenaerrazuriz00
 
 /* Este código presenta una grilla de 40 x 40, donde cada posición es ocupada
  aleatoriamente por cuadrados con otro cuadrado dentro, por un espiral cerrado o
@@ -42,7 +42,7 @@ void draw () {
     for (int y = 0; y <= height; y += update) {                 //Dos for juntos dan las coordenadas de x e y en un plano cartesiano para determinar el tamaño de la grilla.
       float e = random(2);                                      //Random de posición entre rangos de 0 a 2
       if (e > 1) {                                              //Determinar lo que va a pasar entre 0 y 1
-/*Todo lo escrito dentro de estos corcheter
+/*Todo lo escrito dentro de estos corchetes
 está atado a la condición anterior*/
         noFill();                                               //Figuras sin relleno                                             
         strokeWeight(2);                                        //Bordes de 2 pixeles de grosor.
@@ -73,11 +73,11 @@ void drawTarget(float xloc, float yloc, int size, int num) {    //Definir compor
   
 
 color [] color2 = {                                              //Array o biblioteca de los colores usados, para llamarlos después 
-  color(21, 84, 92, 80),                                         //Naranjo, mas opacidad
-  color(5, 76, 91, 80),                                          //Sandía, mas opacidad
-  color(334, 81, 62, 80),                                        //Fucsia, mas opacidad
-  color(293, 41, 42, 80),                                        //Morado, mas opacidad
-  color(170, 74, 54, 80)                                         //Sea green, mas opacidad
+  color(21, 84, 92, 80),                                         //Naranjo, más opacidad
+  color(5, 76, 91, 80),                                          //Sandía, más opacidad
+  color(334, 81, 62, 80),                                        //Fucsia, más opacidad
+  color(293, 41, 42, 80),                                        //Morado, más opacidad
+  color(170, 74, 54, 80)                                         //Sea green, más opacidad
 };
 
     noStroke();                                                 //Figuras sin bordes
