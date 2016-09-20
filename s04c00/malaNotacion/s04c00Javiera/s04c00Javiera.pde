@@ -35,6 +35,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
                                             // figuras con una separación de 100
                                             // px cada a lo largo y ancho
       int gris = color(337, 0, 85); // Variable de color gris
+      //error de sintaxis
       noStroke(); // Se declara que la figura no tiene borde
       fill(gris); // Se declara que el color de fondo de la figura es gris
       ellipse(i, h, 100, 100); // Se crean los círculos de 100 px de diámetro
@@ -44,6 +45,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
   for (int i = 0; i < height; i += 100) {
     for (int h = 0; h < width; h += 100) {
       int blanco = color(337, 0, 99); // Variable de color blanco
+      //error de sintaxis
       strokeWeight(3); // Ancho de borde de la línea de 3 px
       stroke(blanco); // Color del borde de la línea blanco
       strokeCap(ROUND); // Terminaciones de las líneas son redondas
@@ -54,6 +56,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
   for (int i = 50; i < height; i += 100) {
     for (int h = 0; h < width; h += 100) {
       int blanco = color(337, 0, 99); // Variable de color blanco
+      //error de sintaxis
       strokeWeight(3); // Ancho de borde de la línea de 3 px
       stroke(blanco); // Color del borde de la línea blanco
       strokeCap(ROUND); // Terminaciones de las líneas son redondas
@@ -64,6 +67,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
   for (int i = 0; i < height; i += 100) {
     for (int h = 50; h < width; h += 100) {
       int blanco = color(337, 0, 99); // Variable de color blanco
+      //error de sintaxis
       strokeWeight(3); // Ancho de borde de la línea de 3 px
       stroke(blanco); // Color del borde de la línea blanco
       strokeCap(ROUND); // Terminaciones de las líneas son redondas
@@ -74,6 +78,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
   for (int i = 50; i < height; i += 100) {
     for (int h = 50; h < width; h += 100) {
       int blanco = color(337, 0, 99); // Variable de color blanco
+      //error de sintaxis
       strokeWeight(3); // Ancho de borde de la línea de 3 px
       stroke(blanco); // Color del borde de la línea blanco
       strokeCap(ROUND); // Terminaciones de las líneas son redondas
@@ -84,12 +89,14 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
   for (int i = 75; i < height; i += 100) {
     for (int h = 75; h < width; h += 100) {
       int celeste = color(199, 85, 57); // Variable de color celeste
+      //error de sintaxis
       noStroke(); // Se declara que la figura no tiene borde
       fill(celeste, 200); // Se declara que el color de las elipses es celeste
                           // con un canal alpha de 200
       ellipse(i, h, 50, 50); // Se crean los círculos equidistantes entre sí
                              // de 50 px de diámetro
       int azul = color(248, 81, 34); // Variable de color azul
+      //error de sintaxis
       noStroke(); // se declara que la figura no tiene borde
       fill(azul); // se declara que el color de las elipses es azul
       ellipse(i, h, 30, 30); // Se crean los círculos equidistantes entre sí
@@ -100,11 +107,13 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
   for (int i = 25; i < height; i += 100) {
     for (int h = 25; h < width; h += 100) {
       int rclaro = color(337, 91, 81); // Variable de color rosado claro
+      //error de sintaxis
       noStroke(); // Se declara que la figura no tiene borde
       fill(rclaro, 200); // Se declara que la figura es de color rosado claro
       ellipse(i, h, 35, 35); // Se crean los círculos equidistantes entre sí
                              // de 35 px de diámetro
       int rosado = color(331, 79, 57); // Variable de color rosado
+      //error de sintaxis
       noStroke(); // Se declara que la figura no tiene borde
       fill(rosado); // Se declara que el color de la figura es rosado
       ellipse(i, h, 20, 20); // Se crean los círculos equidistantes entre sí
@@ -119,6 +128,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
                                           // de los cuadrados que van sobre las
                                           // líneas blancas
       int negro = color(338, 1, 1); // Variable de color negro
+      //error de sintaxis
       float r = random(15); // Se crea un random de máximo 15
       noStroke(); // se declara que la figura no tiene borde
       fill(negro, 100); // Se declara que la figura es de color negro
@@ -135,6 +145,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
                                             // de los cuadrados que van sobre
                                             // los círculos rosados
       int negro = color(338, 1, 1); // Variable de color negro
+      //error de sintaxis
       float r = random(15); // Se crea un random de máximo 15
       noStroke(); // se declara que la figura no tiene borde
       fill(negro, 100); // Se declara que la figura es de color negro
@@ -151,6 +162,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
                                             // de los cuadrados que van sobre
                                             // los círculos azules
       int negro = color(338, 1, 1); // Variable de color negro
+      //error de sintaxis
       float r = random(15); // Se crea un random de máximo 15
       noStroke(); // Se declara que las figuras no tienen borde
       fill(negro, 100); // Se declara que la figura es de color negro
