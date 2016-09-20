@@ -1,4 +1,4 @@
-// Expresión Digital - Diseño Digital - UDD - 2016
+// Expresión Digital II - Diseño Digital - UDD - 2016
 // Javiera Ramírez
 // s04c00
 
@@ -6,9 +6,9 @@
  (elipses, cuadrados y líneas) que forman un patrón que consta de un fondo 
  blanco, sobre eso hay círculos grises repartios equitativamente a lo largo 
  y ancho del canvas. Sobre los círculos grises se encuentran líneas blancas
- que en conjinto crean cruces con un vacío al medio. En estos vacíos ha círculos
+ que en conjunto crean cruces con un vacío al medio. En estos vacíos ha círculos
  rosados y celestes, que comparten su centro con círculos más pequeños y de 
- colores mas oscuros. Además, sobre cada línea y en el centro de cada 
+ colores más oscuros. Además, sobre cada línea y en el centro de cada 
  círculo hay cuadrados negros a los cuales se les aplicó canal alpha para
  darles transparencia, y un random en tamaño que hace variar sus radios entre 
  1 y 15 pixeles*/
