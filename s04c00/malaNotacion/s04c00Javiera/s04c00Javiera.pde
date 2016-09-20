@@ -39,6 +39,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
       noStroke(); // Se declara que la figura no tiene borde
       fill(gris); // Se declara que el color de fondo de la figura es gris
       ellipse(i, h, 100, 100); // Se crean los círculos de 100 px de diámetro
+      // se usan for loop para width y height, pero las variables están cambiadas 
     }
   }
   //LÍNEAS
@@ -50,6 +51,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
       stroke(blanco); // Color del borde de la línea blanco
       strokeCap(ROUND); // Terminaciones de las líneas son redondas
       line(i-7, h-7, i+7, h+7);
+      // se usan for loop para width y height, pero las variables están cambiadas 
     }
   }
 
@@ -61,6 +63,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
       stroke(blanco); // Color del borde de la línea blanco
       strokeCap(ROUND); // Terminaciones de las líneas son redondas
       line(i+7, h-7, i-7, h+7);
+      // se usan for loop para width y height, pero las variables están cambiadas 
     }
   }
 
@@ -72,6 +75,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
       stroke(blanco); // Color del borde de la línea blanco
       strokeCap(ROUND); // Terminaciones de las líneas son redondas
       line(i+7, h-7, i-7, h+7);
+      // se usan for loop para width y height, pero las variables están cambiadas 
     }
   }
 
@@ -83,6 +87,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
       stroke(blanco); // Color del borde de la línea blanco
       strokeCap(ROUND); // Terminaciones de las líneas son redondas
       line(i-7, h-7, i+7, h+7);
+      // se usan for loop para width y height, pero las variables están cambiadas 
     }
   }
   //CÍRCULOS
@@ -94,12 +99,14 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
       fill(celeste, 200); // Se declara que el color de las elipses es celeste
                           // con un canal alpha de 200
       ellipse(i, h, 50, 50); // Se crean los círculos equidistantes entre sí
+      // se usan for loop para width y height, pero las variables están cambiadas 
                              // de 50 px de diámetro
       int azul = color(248, 81, 34); // Variable de color azul
       //error de sintaxis
       noStroke(); // se declara que la figura no tiene borde
       fill(azul); // se declara que el color de las elipses es azul
       ellipse(i, h, 30, 30); // Se crean los círculos equidistantes entre sí
+      // se usan for loop para width y height, pero las variables están cambiadas 
                              // de 30 px de diámetro sobre los círculos celestes
     }
   }
@@ -111,12 +118,14 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
       noStroke(); // Se declara que la figura no tiene borde
       fill(rclaro, 200); // Se declara que la figura es de color rosado claro
       ellipse(i, h, 35, 35); // Se crean los círculos equidistantes entre sí
+      // se usan for loop para width y height, pero las variables están cambiadas 
                              // de 35 px de diámetro
       int rosado = color(331, 79, 57); // Variable de color rosado
       //error de sintaxis
       noStroke(); // Se declara que la figura no tiene borde
       fill(rosado); // Se declara que el color de la figura es rosado
       ellipse(i, h, 20, 20); // Se crean los círculos equidistantes entre sí
+      // se usan for loop para width y height, pero las variables están cambiadas 
                              // de 20 px de diámetro sobre los círculos 
                              // rosado claro
     }
@@ -135,6 +144,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
       rectMode(CENTER); // Se declara que la figura crece desde el centro
                         // en vez de el vértice
       rect(i, h, r, r); // Se crean los cuadrados sobre cada línea
+      // se usan for loop para width y height, pero las variables están cambiadas 
                         // con un random de tamaño que los hace variar entre
                         // 1 y 15 px
     }
@@ -152,6 +162,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
       rectMode(CENTER); // Se declara que la figura crece desde el centro
                         // en vez de el vértice 
       rect(i, h, r, r); // Se crean los cuadrados sobre cada círculo rosado
+      // se usan for loop para width y height, pero las variables están cambiadas 
                         // con un random de tamaño que los hace variar entre
                         // 1 y 15 px
     }
@@ -169,6 +180,7 @@ beginRecord(PDF, "s04c00Javiera_###.pdf");
       rectMode(CENTER); // Se declara que la figura crece desde el centro
                         // en vez de el vértice 
       rect(i, h, r, r); // Se crean los cuadrados sobre cada círculo azul
+      // se usan for loop para width y height, pero las variables están cambiadas 
                         // con un random de tamaño que los hace variar entre
                         // 1 y 15 px
     }
