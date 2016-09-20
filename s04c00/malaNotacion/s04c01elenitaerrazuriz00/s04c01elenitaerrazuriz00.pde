@@ -23,7 +23,7 @@ import processing.pdf.*;                                         //variable para
 
 int update = 40;                                                 //Variable para el update dentro del for, la suma de cuanto en cuanto para la grilla
 
-void setup () {
+void setup() {
   size(800, 1000);                                               //Tamaño del canvas o mesa de trabajo
   colorMode(HSB, 360, 100, 100);                                 //Modo de color del documento, para poder imprimirlo
   background(360);                                              //Fondo blanco
@@ -33,7 +33,7 @@ void setup () {
 
 /*Función que determina todo lo que se va a mostrar
 gráficamente, ya sean las figuras o cómo van dispuestas.*/
-void draw () {
+void draw() {
   
   beginRecord(PDF, "folder/s04c01elenaerrazuriz_###.pdf");
   
@@ -46,7 +46,7 @@ void draw () {
 está atado a la condición anterior*/
         noFill();                                               //Figuras sin relleno                                             
         strokeWeight(2);                                        //Bordes de 2 pixeles de grosor.
-        stroke( colarray [(int)random(0, 5)]);                  //Color de bordes pintados aleatoriamente con los colores previamente seleccionados
+        stroke( colarray [(int)random(5)]);                  //Color de bordes pintados aleatoriamente con los colores previamente seleccionados
         rect(x, y, 34, 34);                                     //Rectángulo inicial de 34 x 34 pixeles                          
         line(x - 4, y + 9, x + 16, y + 9);                      //línea horizontal conectada al lado derecho del cuadrado
         line(x - 4, y + 9, x - 4, y - 8);                       //Línea vertical originada de la anterior
@@ -55,7 +55,7 @@ está atado a la condición anterior*/
         line(x + 10, y + 3, x - 12, y + 3);                     //Línea horizontal final, interior del espiral
         line(x - 12, y + 3, x - 12, y - 16);                    //Línea vertical hacia arriba, hasta llegar al borde superior del cuadrado
       } else {                                                  //Indicador que todo lo que no fue abarcado por la condición anterior puede tener otra acción.
-        drawTarget(x+40, y+2, 25, 2);                           //Función que ocurre, el resultado visible
+        drawTarget(x + 40, y + 2, 25, 2);                           //Función que ocurre, el resultado visible
       }  
     }
   }
@@ -68,7 +68,7 @@ está atado a la condición anterior*/
 del centro de la más grande y vayan decreciendo regularmente*/
 void drawTarget(float xloc, float yloc, int size, int num) {    //Definir comportamiento de cada coordenada dentro de los índices para cada figura
 
-  float steps = size/num;                                       //Definir la misma variable para el porte y la cantidad de figuras dentro de una
+  float steps = size / num;                                       //Definir la misma variable para el porte y la cantidad de figuras dentro de una
   for (int i = 0; i < num; i++) {                               //De cuando en cuando ya a avanzar una variable
   
 
@@ -81,9 +81,9 @@ color [] color2 = {                                              //Array o bibli
 };
 
     noStroke();                                                 //Figuras sin bordes
-    fill(color2 [(int)random(0, 5)]);                           //Color de relleno pintado aleatoriamente con los colores previamente seleccionados
+    fill(color2 [(int)random(5)]);                           //Color de relleno pintado aleatoriamente con los colores previamente seleccionados
     rectMode(CENTER);                                           //Definir que las figuras nacen del centro
-    rect(xloc, yloc, size - i*steps, size - i*steps);           //La ecuación para determinar el comportamiento de la función
+    rect(xloc, yloc, size - i * steps, size - i * steps);           //La ecuación para determinar el comportamiento de la función
   }
 }
 
