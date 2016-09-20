@@ -21,6 +21,7 @@ void setup() {
   int blanco = color(337, 0, 99); // Variable de color HSB color blanco
   //size(1200, 600); [libreta]
   size(900, 1500); // [póster] // Se determina el tamaño del canvas de 900 px de 
+  // el canvas no es de relación 4 x 5
                                // ancho y 1500 px a alto
   background(blanco); // Se determina que el color del fondo es blanco
 }
