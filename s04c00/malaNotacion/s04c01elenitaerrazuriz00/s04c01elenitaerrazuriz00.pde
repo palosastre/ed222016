@@ -11,7 +11,7 @@ import processing.pdf.*;                                         //variable para
 
  
   
-  color [] colarray = {                                          //Array o biblioteca de los colores usados, para llamarlos después 
+color [] colarray = {                                          //Array o biblioteca de los colores usados, para llamarlos después 
   color(21, 84, 92),                                             //Naranjo
   color(5, 76, 91),                                              //Sandía 
   color(334, 81, 62),                                            //Fucsia 
@@ -72,13 +72,13 @@ void drawTarget(float xloc, float yloc, int size, int num) {    //Definir compor
   for (int i = 0; i < num; i++) {                               //De cuando en cuando ya a avanzar una variable
   
 
-color [] color2 = {                                              //Array o biblioteca de los colores usados, para llamarlos después 
-  color(21, 84, 92, 80),                                         //Naranjo, más opacidad
-  color(5, 76, 91, 80),                                          //Sandía, más opacidad
-  color(334, 81, 62, 80),                                        //Fucsia, más opacidad
-  color(293, 41, 42, 80),                                        //Morado, más opacidad
-  color(170, 74, 54, 80)                                         //Sea green, más opacidad
-};
+    color [] color2 = {                                              //Array o biblioteca de los colores usados, para llamarlos después 
+      color(21, 84, 92, 80),                                         //Naranjo, más opacidad
+      color(5, 76, 91, 80),                                          //Sandía, más opacidad
+      color(334, 81, 62, 80),                                        //Fucsia, más opacidad
+      color(293, 41, 42, 80),                                        //Morado, más opacidad
+      color(170, 74, 54, 80)                                         //Sea green, más opacidad
+    };
 
     noStroke();                                                 //Figuras sin bordes
     fill(color2 [(int)random(5)]);                           //Color de relleno pintado aleatoriamente con los colores previamente seleccionados
