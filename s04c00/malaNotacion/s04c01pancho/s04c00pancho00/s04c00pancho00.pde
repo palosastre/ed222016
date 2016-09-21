@@ -15,21 +15,21 @@ void setup() {
 void draw() {          
   // beginRecord(PDF, "s04c00pancho00.pdf");
   colorMode(HSB, 360, 100, 100);
-  
+  // debe ser local dentro de cada for loop
   int i;
   int j;
   
   //Colores
-  
+  // gloabales y llamadas solo para su uso en void draw
   color pal = color(42, 9, 100);        //  Palido.
   color sal = color(41, 49, 99);        //  Salsa de ajo.
   color car = color(352, 81, 84);        //  Carmesi.
   color tre = color(343, 92, 60);        //  Tres cuartos.
-  
+  // gloabales y llamadas solo para su uso en void draw
   color bla = color(0, 0, 100);        //  Blanco.
   // esta variable no está en uso
   color neg = color(0, 0, 0);        //  Negro.
-  
+  // gloabales y llamadas solo para su uso en void draw
  color [] back = {bla, pal, sal};  //Array de colores cafes.
  color [] oxi = {car, tre};      //Array de colores carmesi.
   
