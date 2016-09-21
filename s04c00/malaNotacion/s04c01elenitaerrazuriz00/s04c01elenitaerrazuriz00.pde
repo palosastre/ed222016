@@ -80,7 +80,7 @@ void drawTarget(float xloc, float yloc, int size, int num) {    //Definir compor
   float steps = size / num;                                       //Definir la misma variable para el porte y la cantidad de figuras dentro de una
   for (int i = 0; i < num; i++) {                               //De cuando en cuando ya a avanzar una variable
   
-
+// Este array debe ser global y solo llamado al uso.
     color [] color2 = {                                              //Array o biblioteca de los colores usados, para llamarlos después 
       color(21, 84, 92, 80),                                         //Naranjo, más opacidad
       color(5, 76, 91, 80),                                          //Sandía, más opacidad
