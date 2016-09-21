@@ -7,6 +7,7 @@ import processing.pdf.*;
 //falta una descripción de qué pasará con la interacción.
 int x = 10; //Declarar un entero para los doble for loop 
 int y = 20; //Declarar un entero para los doble for loop
+//variable sin uso
 float noesta = random(3);
 
 color[] colores = new color[3]; //Declarar array de 3 colores
