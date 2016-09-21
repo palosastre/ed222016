@@ -2,11 +2,11 @@ import processing.pdf.*;
 
 //Expresión Digital II - UDD - 2016.
 //Maite Iturriaga Batlle.
-//s04c01maite00.
-//Es un patrón a base de lineas que van cambiando sus colores y grosores.
-int x= 10; //Declarar un entero para los doble for loop 
-int y= 20; //Declarar un entero para los doble for loop
-float noesta=random(3);
+//s04c00maite00.
+//Es un patrón a base de líneas que van cambiando sus colores y grosores.
+int x = 10; //Declarar un entero para los doble for loop 
+int y = 20; //Declarar un entero para los doble for loop
+float noesta = random(3);
 
 color[] colores = new color[3]; //Declarar array de 3 colores
 
@@ -21,39 +21,39 @@ void setup() {
 
 //Doble for loop para crear primer dibujo
 void draw() {
-  beginRecord(PDF, "sc04c01maite00###.pdf");
+  // beginRecord(PDF, "sc04c01maite00###.pdf");
     background(0); //background color negro esta en void draw, para que cada vez se vuelva a dibujar
     
-  for (int i = 10; i <=width; i = i+y) { // en el caso de que i sea menor que el ancho se le va sumar y
-    for (int j = 0; j <=height; j = j+y ) { //en el caso de que j sea menor al alto a j se le sumara y
+  for (int i = 10; i <= width; i = i + y) { // en el caso de que i sea menor que el ancho se le va sumar y
+    for (int j = 0; j <= height; j = j + y ) { //en el caso de que j sea menor al alto a j se le sumara y
       stroke(colores[(int)random(colores.length)]);
-      line( i, j, i+x, j); //Linea(a)
+      line(i, j, i + x, j); //Linea(a)
       stroke(colores[(int)random(colores.length)]);
-      line( i, j, i, j-x); //Linea(b)
+      line(i, j, i, j - x); //Linea(b)
       stroke(colores[(int)random(colores.length)]);
-      line(i-x, j+x, i-x, j+x*2);//Linea(c)
+      line(i - x, j + x, i - x, j + x * 2);//Linea(c)
       stroke(colores[(int)random(colores.length)]);
-      line(i, j, i-x, j+x); //Linea(d)
+      line(i, j, i - x, j + x); //Linea(d)
     }
   }
   //Doble for loop para crear segundo dibujo con un desface de 5.
-  for (int i = 10+x/2; i <=width; i = i+y) {  //es /2 para que exista el desface en las lineas
-    for (int j = x/2; j <=height; j = j+y ) { //es /2 para que exista el desface en las lineas
-      strokeWeight(random(0,3));//Random de grosor de la linea entre 0 a 3
+  for (int i = 10 + x / 2; i <= width; i = i + y) {  //es /2 para que exista el desface en las líneas
+    for (int j = x / 2; j <= height; j = j + y ) { //es /2 para que exista el desface en las líneas
+      strokeWeight(random(0,3));//Random de grosor de la línea entre 0 a 3
       stroke(colores[(int)random(colores.length)]);
-      line( i, j, i+x, j); //Linea(a)
+      line(i, j, i + x, j); //Línea(a)
       
-      strokeWeight(random(0,3));//Random de grosor de la linea entre 0 a 3
+      strokeWeight(random(0,3));//Random de grosor de la línea entre 0 a 3
       stroke(colores[(int)random(colores.length)]);
-      line( i, j, i, j-x); //Linea(b)
+      line(i, j, i, j - x); //Línea(b)
       
-      strokeWeight(random(0,3));//Random de grosor de la linea entre 0 a 3
+      strokeWeight(random(0,3));//Random de grosor de la línea entre 0 a 3
       stroke(colores[(int)random(colores.length)]);
-      line(i-x, j+x, i-x, j+x*2);//Linea(c)
+      line(i - x, j + x, i - x, j + x * 2);//Línea(c)
       
-      strokeWeight(random(0,3)); //Random de grosor de la linea entre 0 a 3
+      strokeWeight(random(0,3)); //Random de grosor de la línea entre 0 a 3
       stroke(colores[(int)random(colores.length)]);
-      line(i, j, i-x, j+x); //Linea(d)
+      line(i, j, i - x, j + x); //Línea(d)
     }
   }
   noLoop(); //Para que no se repita 
@@ -61,7 +61,7 @@ void draw() {
 }
 
 
-//Se crea la funcion keyPressed
+//Se crea la función keyPressed
 void keyPressed() {
 
   if (key == 'a') { //cada vez que se apreta la tecla "a" se vuelve a dibujar
