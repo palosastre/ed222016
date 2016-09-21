@@ -4,6 +4,7 @@ import processing.pdf.*;
 //Maite Iturriaga Batlle.
 //s04c00maite00.
 //Es un patrón a base de líneas que van cambiando sus colores y grosores.
+//falta una descripción de qué pasará con la interacción.
 int x = 10; //Declarar un entero para los doble for loop 
 int y = 20; //Declarar un entero para los doble for loop
 float noesta = random(3);
@@ -22,36 +23,38 @@ void setup() {
 //Doble for loop para crear primer dibujo
 void draw() {
   // beginRecord(PDF, "sc04c01maite00###.pdf");
-    background(0); //background color negro esta en void draw, para que cada vez se vuelva a dibujar
-    
+  background(0); //background color negro está en void draw, para que cada vez se vuelva a dibujar
+  
+  //no hay descripción de este bloque de texto  
   for (int i = 10; i <= width; i = i + y) { // en el caso de que i sea menor que el ancho se le va sumar y
-    for (int j = 0; j <= height; j = j + y ) { //en el caso de que j sea menor al alto a j se le sumara y
+    for (int j = 0; j <= height; j = j + y ) { //en el caso de que j sea menor al alto a j se le sumará y
       stroke(colores[(int)random(colores.length)]);
-      line(i, j, i + x, j); //Linea(a)
+      line(i, j, i + x, j); //Línea(a)
       stroke(colores[(int)random(colores.length)]);
-      line(i, j, i, j - x); //Linea(b)
+      line(i, j, i, j - x); //Línea(b)
       stroke(colores[(int)random(colores.length)]);
-      line(i - x, j + x, i - x, j + x * 2);//Linea(c)
+      line(i - x, j + x, i - x, j + x * 2);//Línea(c)
       stroke(colores[(int)random(colores.length)]);
-      line(i, j, i - x, j + x); //Linea(d)
+      line(i, j, i - x, j + x); //Línea(d)
     }
   }
   //Doble for loop para crear segundo dibujo con un desface de 5.
+  //no hay descripción de este bloque de texto
   for (int i = 10 + x / 2; i <= width; i = i + y) {  //es /2 para que exista el desface en las líneas
     for (int j = x / 2; j <= height; j = j + y ) { //es /2 para que exista el desface en las líneas
-      strokeWeight(random(0,3));//Random de grosor de la línea entre 0 a 3
+      strokeWeight(random(3));//Random de grosor de la línea entre 0 a 3
       stroke(colores[(int)random(colores.length)]);
       line(i, j, i + x, j); //Línea(a)
       
-      strokeWeight(random(0,3));//Random de grosor de la línea entre 0 a 3
+      strokeWeight(random(3));//Random de grosor de la línea entre 0 a 3
       stroke(colores[(int)random(colores.length)]);
       line(i, j, i, j - x); //Línea(b)
       
-      strokeWeight(random(0,3));//Random de grosor de la línea entre 0 a 3
+      strokeWeight(random(3));//Random de grosor de la línea entre 0 a 3
       stroke(colores[(int)random(colores.length)]);
       line(i - x, j + x, i - x, j + x * 2);//Línea(c)
       
-      strokeWeight(random(0,3)); //Random de grosor de la línea entre 0 a 3
+      strokeWeight(random(3)); //Random de grosor de la línea entre 0 a 3
       stroke(colores[(int)random(colores.length)]);
       line(i, j, i - x, j + x); //Línea(d)
     }
