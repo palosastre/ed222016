@@ -1,4 +1,4 @@
-// Expresión Digital - Diseño Digital - UDD - 2016
+// Expresión Digital II - Diseño Digital - UDD - 2016
 // Francisco Barría
 // s04c00pancho00
 
@@ -34,7 +34,7 @@ void draw() {
   
   translate(width/2, height/2);    //Vestigio de que empiezo mis trabajos como espirales.
 
-background(back[(int)random(3)]);    //El fondo cambia de colores segun el Loop.
+background(back[(int)random(3)]);    //El fondo cambia de colores según el Loop.
 
 noStroke();
 
@@ -65,7 +65,7 @@ for ( i = -(width/2); i < width; i += 80) {
       quad(i+40, j, i, j-40, i-40, j, i, j+40);       //Cuadrados
       quad(i+40, j, i, j-40, i, j+40, i-40, j); 
       
-      fill(oxi[(int)random(2)],255-random(200));    //Triangulos del molino
+      fill(oxi[(int)random(2)],255-random(200));    //Triángulos del molino
       triangle(i, j, i+40, j, i+15, j-15);     
       fill(oxi[(int)random(2)],255-random(200));    
       triangle(i, j, i-40, j, i-15, j+15);    
