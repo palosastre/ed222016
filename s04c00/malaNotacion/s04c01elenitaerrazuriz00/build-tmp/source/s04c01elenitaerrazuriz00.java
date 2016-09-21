@@ -29,7 +29,7 @@ public class s04c01elenitaerrazuriz00 extends PApplet {
 
  
   
-  int [] colarray = {                                          //Array o biblioteca de los colores usados, para llamarlos despu\u00e9s 
+int [] colarray = {                                          //Array o biblioteca de los colores usados, para llamarlos despu\u00e9s 
   color(21, 84, 92),                                             //Naranjo
   color(5, 76, 91),                                              //Sand\u00eda 
   color(334, 81, 62),                                            //Fucsia 
@@ -52,15 +52,14 @@ public void setup() {
 /*Funci\u00f3n que determina todo lo que se va a mostrar
 gr\u00e1ficamente, ya sean las figuras o c\u00f3mo van dispuestas.*/
 public void draw() {
-  background(360);                                              //Fondo blanco
   
-  // beginRecord(PDF, "folder/s04c01elenaerrazuriz_###.pdf");
+  beginRecord(PDF, "folder/s04c01elenaerrazuriz_###.pdf");
   
 
   for (int x = 0; x <= width; x += update) { 
     for (int y = 0; y <= height; y += update) {                 //Dos for juntos dan las coordenadas de x e y en un plano cartesiano para determinar el tama\u00f1o de la grilla.
       float e = random(2);                                      //Random de posici\u00f3n entre rangos de 0 a 2
-      if (e > 1) {                                              //Determinar lo que va a pasar entre 0 y 1
+      if (e < 10) {                                              //Determinar lo que va a pasar entre 0 y 1
 /*Todo lo escrito dentro de estos corchetes
 est\u00e1 atado a la condici\u00f3n anterior*/
         noFill();                                               //Figuras sin relleno                                             
@@ -74,13 +73,13 @@ est\u00e1 atado a la condici\u00f3n anterior*/
         line(x + 10, y + 3, x - 12, y + 3);                     //L\u00ednea horizontal final, interior del espiral
         line(x - 12, y + 3, x - 12, y - 16);                    //L\u00ednea vertical hacia arriba, hasta llegar al borde superior del cuadrado
       } else {                                                  //Indicador que todo lo que no fue abarcado por la condici\u00f3n anterior puede tener otra acci\u00f3n.
-        drawTarget(x + 40, y + 2, 25, 3);                           //Funci\u00f3n que ocurre, el resultado visible
+        drawTarget(x + 40, y + 2, 25, 2);                           //Funci\u00f3n que ocurre, el resultado visible
       }  
     }
   }
   
   noLoop();                                                     //Dejar la composici\u00f3n quieta en un fotograma de tiempo
-  // endRecord();
+  endRecord();
 }
 
 /*Funci\u00f3n para crear figuras proporcionales, que nazcan
@@ -91,13 +90,13 @@ public void drawTarget(float xloc, float yloc, int size, int num) {    //Definir
   for (int i = 0; i < num; i++) {                               //De cuando en cuando ya a avanzar una variable
   
 
-int [] color2 = {                                              //Array o biblioteca de los colores usados, para llamarlos despu\u00e9s 
-  color(21, 84, 92, 80),                                         //Naranjo, m\u00e1s opacidad
-  color(5, 76, 91, 80),                                          //Sand\u00eda, m\u00e1s opacidad
-  color(334, 81, 62, 80),                                        //Fucsia, m\u00e1s opacidad
-  color(293, 41, 42, 80),                                        //Morado, m\u00e1s opacidad
-  color(170, 74, 54, 80)                                         //Sea green, m\u00e1s opacidad
-};
+    int [] color2 = {                                              //Array o biblioteca de los colores usados, para llamarlos despu\u00e9s 
+      color(21, 84, 92, 80),                                         //Naranjo, m\u00e1s opacidad
+      color(5, 76, 91, 80),                                          //Sand\u00eda, m\u00e1s opacidad
+      color(334, 81, 62, 80),                                        //Fucsia, m\u00e1s opacidad
+      color(293, 41, 42, 80),                                        //Morado, m\u00e1s opacidad
+      color(170, 74, 54, 80)                                         //Sea green, m\u00e1s opacidad
+    };
 
     noStroke();                                                 //Figuras sin bordes
     fill(color2 [(int)random(5)]);                           //Color de relleno pintado aleatoriamente con los colores previamente seleccionados

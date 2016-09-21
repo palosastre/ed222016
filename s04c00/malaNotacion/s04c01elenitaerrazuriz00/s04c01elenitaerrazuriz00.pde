@@ -66,6 +66,15 @@ está atado a la condición anterior*/
 
 /*Función para crear figuras proporcionales, que nazcan
 del centro de la más grande y vayan decreciendo regularmente*/
+
+/*
+Esta función tiene el mismo nombre y los mismos parámetros
+que la descrita en la referencia de Processing,
+con leves cambios de color y función de dibujo. 
+Esto pone en duda el conocimiento de lo que está dibujando.
+Además de un error de entrega al utilizar contenido que no ha 
+sido enseñado.
+*/
 void drawTarget(float xloc, float yloc, int size, int num) {    //Definir comportamiento de cada coordenada dentro de los índices para cada figura
 
   float steps = size / num;                                       //Definir la misma variable para el porte y la cantidad de figuras dentro de una
