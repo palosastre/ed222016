@@ -21,14 +21,14 @@ void draw() {
   
   //Colores
   
-  color pal = color (42, 9, 100);        //  Palido.
-  color sal = color (41, 49, 99);        //  Salsa de ajo.
-  color car = color (352, 81, 84);        //  Carmesi.
-  color tre = color (343, 92, 60);        //  Tres cuartos.
+  color pal = color(42, 9, 100);        //  Palido.
+  color sal = color(41, 49, 99);        //  Salsa de ajo.
+  color car = color(352, 81, 84);        //  Carmesi.
+  color tre = color(343, 92, 60);        //  Tres cuartos.
   
-  color bla = color (0, 0, 100);        //  Blanco.
+  color bla = color(0, 0, 100);        //  Blanco.
   // esta variable no está en uso
-  color neg = color (0, 0, 0);        //  Negro.
+  color neg = color(0, 0, 0);        //  Negro.
   
  color [] back = {bla, pal, sal};  //Array de colores cafes.
  color [] oxi = {car, tre};      //Array de colores carmesi.
