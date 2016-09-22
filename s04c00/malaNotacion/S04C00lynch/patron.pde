@@ -1,4 +1,5 @@
 /* dibujo del patron de triangulos  */
+// falto una descripción de cada bloque de código para poder entener el órden del patrón 
 void patron(int p, int o) {
   noStroke();
   stroke(80);

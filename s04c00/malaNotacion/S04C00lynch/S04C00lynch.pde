@@ -2,7 +2,11 @@
 // Ricardo Vidal Lynch
 // s04c00lynch00
 
-int lin2 = width / 6; // error extraño, división mal hecha
+/*
+No hay descripción general de lo que se verá al correr el programa, tampoco de cómo se usa en el caso de haber interacción 
+*/
+
+int lin2 = width / 6; // esto pasa porque width no está con el valor, este valor lo toma en la línea 18, cuando entras parámetros al size
 int colT[] = {0, 100, 200}; // array para los colores del patrón de triángulos
 int colRay = 42; //variable para degradado colores de línea de encima
 int a = 0; // variables para tener estados de presión
@@ -16,11 +20,11 @@ void setup() {
 }
 
 void draw() {
-  int lin = width / 6; // definido aca por error extraño que me entrega resultado 16
+  int lin = width / 6; // luego de size puedes hacer esto, y así no tener que declarar e inicalizar a cada ciclo del draw
   println(lin2); // debug del error anterior
   int rayL[] =  {lin, lin * 2, lin * 3, lin * 4, lin * 5}; // definido aca para poder tomar valos de lin
   // array que divide la línea en 5 partes exactas
-  beginRecord(PDF, "s04c00LYNCH01.pdf"); // begin record
+  // beginRecord(PDF, "s04c00LYNCH01.pdf"); // begin record
   
   background(0); 
   for (int i = 0; i < width; i += 10) {
@@ -34,7 +38,7 @@ void draw() {
         float colF = random(255);
         fill(colF, colF, 255);
       }
-      rect(i, j, random(10, 20), random(10,2 0));
+      rect(i, j, random(10, 20), random(10, 20));
     }
   }
 
@@ -63,7 +67,7 @@ void draw() {
   /* el color esta definido por el array */
   
   noLoop();
-  endRecord();
+  // endRecord();
 }
 
 /* aca estan todas las funciones de teclado, varias letras */
@@ -93,6 +97,7 @@ void keyPressed(){
 }
 
 /*  evento de mouse */
+// este void está bien utilizado, aunque no era necesario para el certamen
 void mousePressed(){
   if (click == 0) {   
     click = 1;
