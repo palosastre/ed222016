@@ -84,6 +84,7 @@ void draw() {
   for (int x = 0; x < width; x += w + w) {           //for loop para eje x.
     for (int y = 0; y < height; y += w + w) {        //for loop para eje y.
       //elipse 
+      // se llama a c para elegir entre colores y luego no se usa. 
       c = colarray [ (int) random(6) ];             //llamo nuevamente variable color random.
       fill(blanco, (int) random(40, 100));         // asigno valor random a relleno.
       ellipse(x + q, y + q, w / 3, w / 3);          //creo una elipse.
@@ -93,6 +94,7 @@ void draw() {
   for (int x = 50; x < width; x += w + w) {           //for loop para eje x.
     for (int y = 50; y < height; y += w + w) {        //for loop para eje y.
       //elipse 
+      // se llama a c para elegir entre colores y luego no se usa. 
       c = colarray [ (int) random(6) ];              //llamo nuevamente variable color random.
       fill(blanco, (int) random(20, 50));           // asigno valor random a relleno.
       ellipse(x + q, y + q, w / 3, w / 3);           //creo una elipse.
