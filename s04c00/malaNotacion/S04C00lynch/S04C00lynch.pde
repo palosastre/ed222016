@@ -2,13 +2,13 @@
 // Ricardo Vidal Lynch
 // s04c00lynch00
 
-int lin2 = width/6; // error extraño, division mal hecha
-int colT[] = {0,100,200}; // array para los colores del patron de triangulos
-int colRay = 42; //variable para degradado colores de linea de encima
-int A = 0; // variables para tener estados de presion
+int lin2 = width/6; // error extraño, división mal hecha
+int colT[] = {0,100,200}; // array para los colores del patrón de triángulos
+int colRay = 42; //variable para degradado colores de línea de encima
+int A = 0; // variables para tener estados de presión
 int Q = 0; // de las teclas a y q
 int click = 0; // variable estado del click
-import processing.pdf.*;  // inicializar funcion pdf
+import processing.pdf.*;  // inicializar función pdf
 
 void setup() { 
   size(1200,1000);
@@ -19,7 +19,7 @@ void draw() {
   int lin = width/6; // definido aca por error extraño que me entrega resultado 16
   println(lin2); // debug del error anterior
   int rayL[] =  {lin,lin*2,lin*3,lin*4,lin*5}; // definido aca para poder tomar valos de lin
-  // array que divide la linea en 5 partes exactas
+  // array que divide la línea en 5 partes exactas
   beginRecord(PDF, "s04c00LYNCH01.pdf"); // begin record
   
   background(0); 
@@ -41,11 +41,11 @@ void draw() {
 
 
   for (int i =0; i<width; i+=40) {
-    for (int j =0; j<height; j+=40) {  // este otro doble for dibuja el patron 
-      patron(i, j);                    // de triangulos, definido en una funcion
+    for (int j =0; j<height; j+=40) {  // este otro doble for dibuja el patrón 
+      patron(i, j);                    // de triángulos, definido en una función
     }                                  // en la otra pestaña
   }
-  /* aca se dibuja la linea en degrade que va encima */
+  /* aca se dibuja la línea en degrade que va encima */
   strokeWeight(50);
   stroke(colRay*6, Q, colRay*6);
   line(0, mouseY/2.5, rayL[0], mouseY*1.5);
@@ -70,7 +70,7 @@ void draw() {
 void keyPressed(){
   if(key == 'a'){
     if(A == 0){  // esto lo uso para generar un estado de variable
-      A=1;       // que cambie con la presion de la tecla
+      A=1;       // que cambie con la presión de la tecla
       redraw();
   } else {
     A=0;
