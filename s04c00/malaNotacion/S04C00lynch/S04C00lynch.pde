@@ -5,8 +5,8 @@
 int lin2 = width / 6; // error extraño, división mal hecha
 int colT[] = {0, 100, 200}; // array para los colores del patrón de triángulos
 int colRay = 42; //variable para degradado colores de línea de encima
-int A = 0; // variables para tener estados de presión
-int Q = 0; // de las teclas a y q
+int a = 0; // variables para tener estados de presión
+int q = 0; // de las teclas a y q
 int click = 0; // variable estado del click
 import processing.pdf.*;  // inicializar función pdf
 
@@ -47,17 +47,17 @@ void draw() {
   }
   /* aca se dibuja la línea en degrade que va encima */
   strokeWeight(50);
-  stroke(colRay * 6, Q, colRay * 6);
+  stroke(colRay * 6, q, colRay * 6);
   line(0, mouseY / 2.5, rayL[0], mouseY * 1.5);
-  stroke(colRay * 5, Q, colRay * 5);
+  stroke(colRay * 5, q, colRay * 5);
   line(rayL[0], mouseY * 1.5, rayL[1], mouseY / 2);
-  stroke(colRay * 4, Q, colRay * 4);
+  stroke(colRay * 4, q, colRay * 4);
   line(rayL[1], mouseY / 2, rayL[2], mouseY);
-  stroke(colRay * 3, Q, colRay * 3);
+  stroke(colRay * 3, q, colRay * 3);
   line(rayL[2], mouseY, rayL[3], mouseY / 1.5);
-  stroke(colRay * 2, Q, colRay * 2);
+  stroke(colRay * 2, q, colRay * 2);
   line(rayL[3], mouseY / 1.5, rayL[4], mouseY * 2);
-  stroke(colRay, Q, colRay);
+  stroke(colRay, q, colRay);
   line(rayL[4], mouseY * 2, width, mouseY / 2.5);
   
   /* el color esta definido por el array */
@@ -69,21 +69,21 @@ void draw() {
 /* aca estan todas las funciones de teclado, varias letras */
 void keyPressed(){
   if(key == 'a'){
-    if(A == 0){  // esto lo uso para generar un estado de variable
-      A = 1;       // que cambie con la presión de la tecla
+    if(a == 0){  // esto lo uso para generar un estado de variable
+      a = 1;       // que cambie con la presión de la tecla
       redraw();
     } else {
-      A = 0;
+      a = 0;
       redraw();
     }
   }
   
   if(key == 'q'){
-    if(Q == 0){
-      Q = 255;
+    if(q == 0){
+      q = 255;
       redraw();
     } else {
-      Q = 0;
+      q = 0;
       redraw();
     }
   } 
