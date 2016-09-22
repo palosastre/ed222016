@@ -32,7 +32,7 @@ También se usó un random de color que elige de manera aleatoria tonos de verde
 void draw() {
   for (int x = 0; x < width; x = x + vertex) {
     for (int y = 0; y < height; y = y + vertex) {
-      int c = int(random(0, 3));
+      int c = int(random(3));
       if (c == 0) {
         c = color(0, 100, random(50, 100));
       }
@@ -49,7 +49,7 @@ void draw() {
       if (c == 3) {
         c = color(0, 0, 100, random(0,100));
       }
-      int i = int(random(0, 4));
+      int i = int(random(4));
       if ( i == 0) {
         fill(c);
         rect(x, y, vertex, vertex);
@@ -80,7 +80,7 @@ void draw() {
   */
   for (int x = 0; x < width; x = x + bigvertex) {
     for (int y = 0; y < height; y = y + bigvertex) {
-      int c = int(random(0, 3));
+      int c = int(random(3));
       if (c == 0) {
         c = color(0, 100, random(50, 100), random(50, 75));
       }
@@ -96,7 +96,7 @@ void draw() {
       if (c == 3) {
         c = color(0, 0, 100, random(0, 50));
       }
-      int i = int(random(0, 4));
+      int i = int(random(4));
       if ( i == 0) {
         fill(c);
         rect(x, y, bigvertex, bigvertex);
