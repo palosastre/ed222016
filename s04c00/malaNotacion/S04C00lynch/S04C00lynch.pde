@@ -30,7 +30,7 @@ void draw() {
   for (int i = 0; i < width; i += 10) {
     for (int j = 0; j < height; j += 10) {
       noStroke();
-      //si esta línea no va, no va escrita
+      //si esta línea no va, no se escribe
       //fill(i/2, j/2, 255);    // doble for loop que rellena el fondo de cuadrados tipo 
       if(click == 0){            // hormiguitas de tele de 2 opciones de color, relacionado al click
         fill(random(255));
@@ -49,7 +49,7 @@ void draw() {
       patron(i, j);                    // de triángulos, definido en una función
     }                                  // en la otra pestaña
   }
-  /* aca se dibuja la línea en degrade que va encima */
+  /* acá se dibuja la línea en degrade que va encima */
   strokeWeight(50);
   stroke(colRay * 6, q, colRay * 6);
   line(0, mouseY / 2.5, rayL[0], mouseY * 1.5);
