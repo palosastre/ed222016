@@ -2,7 +2,8 @@
 //Isidora Ordoñez
 //s04c00isi.
 
-/*Con un doble for loop generar un patrón, en este caso el módulo a repetir es
+/*
+Con un doble for loop generar un patrón, en este caso el módulo a repetir es
  una figura compuesta de cuatro triángulos, que en su conjunto forman un cuadrado,
  estos triángulos no tienen línea de contorno y tienen un relleno random dentro de
  un array que se compone por 7 colores distintos. También el patrón contiene un 
@@ -18,9 +19,9 @@
 import processing.pdf.*;     //voy a trabajar con pdf,
 
 float q = 25;     //variable 'q' igual a 20.
-float w = 50;     //variable 'w' igual a 40.
+float w = 50;     //variable 'w' igual a 50.
 int c;            //creo variable 'c'.
-int blanco;
+int blanco; 
 
 color[] colarray = new color[7];   //creo array
 
@@ -47,7 +48,7 @@ void setup() {
 }
 
 void draw() {
-  beginRecord(PDF, "s04/s04c00isi00###.pdf");        //comienza a grabar.
+  //beginRecord(PDF, "s04/s04c00isi00###.pdf");        //comienza a grabar.
   for (int x = 0; x < width; x += w) {                   //for loop para eje x.
     for (int y = 0; y < height; y += w) {                //for loop para eje y.
       noStroke();                                        //las figuras próximas no tenrán contorno.
@@ -73,6 +74,7 @@ void draw() {
 
 
       //elipse 
+      // se llama a c para elegir entre colores y luego no se usa. 
       c = colarray [ (int) random(6) ];             //llamo nuevamente variable color random.
       fill(blanco, (int) random(40, 100));         // asigno valor random a relleno.
       ellipse(x + q, y + q, w, w);                  //creo una elipse.
@@ -82,6 +84,7 @@ void draw() {
   for (int x = 0; x < width; x += w + w) {           //for loop para eje x.
     for (int y = 0; y < height; y += w + w) {        //for loop para eje y.
       //elipse 
+      // se llama a c para elegir entre colores y luego no se usa. 
       c = colarray [ (int) random(6) ];             //llamo nuevamente variable color random.
       fill(blanco, (int) random(40, 100));         // asigno valor random a relleno.
       ellipse(x + q, y + q, w / 3, w / 3);          //creo una elipse.
@@ -91,13 +94,14 @@ void draw() {
   for (int x = 50; x < width; x += w + w) {           //for loop para eje x.
     for (int y = 50; y < height; y += w + w) {        //for loop para eje y.
       //elipse 
+      // se llama a c para elegir entre colores y luego no se usa. 
       c = colarray [ (int) random(6) ];              //llamo nuevamente variable color random.
       fill(blanco, (int) random(20, 50));           // asigno valor random a relleno.
       ellipse(x + q, y + q, w / 3, w / 3);           //creo una elipse.
     }
   }
   noLoop();    //imagen fija.
-  endRecord();  //termina de grabar.
+  //endRecord();  //termina de grabar.
 }
 
 
@@ -113,3 +117,5 @@ void keyPressed() {
     exit();              //cierro el programa.
   }
 }
+
+
