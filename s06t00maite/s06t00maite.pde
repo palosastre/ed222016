@@ -4,7 +4,7 @@
 
 float x, y, amt;
 int vel = 5;
-int vel1 = 5;
+int vel1 = 4;
 int diam = 50;
 color c1, c2, c3;
 
@@ -22,12 +22,7 @@ void draw() {
   amt = map(x, 0, width, 0, 1);
   c3 = lerpColor(c1, c2, amt);
   background(255);                              //Para que se vuelva a dibujar fondo
-  fill(c3);
-
-  line( x, y, x + x, y); //Linea(a)
-  line( x, y, x, y - x); //Linea(b)
-  line(x - x, y + x, x - x, y + x * 2);//Linea(c)
-  line(x, y, x - x, y + x); //Linea(d)
+  lineas();
   x += vel;                                     //De izquierda a derecha movimiento
   y += vel1;
   //x -= 20;                                    //Por el 20 va más rápido y de derecha a izquierda
@@ -45,4 +40,15 @@ void draw() {
   if (y > height - diam / 2 || y < diam / 2) { 
     vel1 *= - 1;
   }
+  
+}
+void lineas(){
+  fill(c3);
+  strokeWeight(3);
+  // todo iene queir en funcion de valores generales mate mate mate mate
+  line( x, y, x + 4, y); //Línea(a)
+  line( x, y, x, y - 4); //Línea(b)
+  line( x - 4, y + 4, x - 4, y + 8);//Línea(c)
+  line(x, y, x - 4, y + 4); //Línea(d)
+  println("maite te gané!");
 }
