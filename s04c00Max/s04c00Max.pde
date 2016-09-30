@@ -15,7 +15,7 @@ color random;
 
 //Definir modo de color, tamaño composición, grosor stoke para efecto vitral y fondo blanco para simular luz.
 void setup() {
-  colorMode(HSB);//, 360, 100, 100, 100);
+  colorMode(HSB, 360, 100, 100, 100);
   size(900, 1125);
   smooth();
   strokeWeight(2);

@@ -1,5 +1,5 @@
 // Expresión Digital - Diseño Digital - UDD - 2016
-// Max Cordero
+// Max Cordero - Nicolás Troncoso
 // s04t00
 /*Patrón en grilla de 7x9. Cuadrados se dibujan con random de mi paleta de colores y otro random de 2 variables elije si se dibuja con o sin Stroke. en */
  
