@@ -34,7 +34,7 @@ Cada semana se creará un archivo [wiki](https://github.com/nicotron/ed222016/wi
 | `5.98` **Ana María Ortiz**      | `5.72` **Margaux Leroy**   | `5.06` **Maximiliano Cordero** |
 | :------------------------------ | -------------------------- | ------------------------------ |
 | `4.81` **Benjamin Guten**       | `4.72` **Elena Errazuriz** | `4.28` **Isidora Ordoñez**     |
-| `4.16` **Paulina Descouvieres** | `3.88` **Catalina Juez**   | `3.72` **Mate Iturriaga**      |
+| `4.16` **Paulina Descouvieres** | `3.88` **Catalina Juez**   | `3.72` **Maite Iturriaga**      |
 | `3.68` **Francisco Barria**     | `2.68` **Ricardo Vidal**   | `2.48` **Javiera Ramirez**     |
 | `2.04`  **Dante Crovetto**      | `1.0` **Gabriela Navarro** | `1.0` **Catalina Ringeling**   |
 
