@@ -103,7 +103,7 @@ Escala de evaluación:
 
       - **run 7.0:** si el programa corre o no, si no corre es 1.0.
       - **programa 1.0**: si cumple con el encargo.
-      - **sintaxis 0.5**: coherencia con la redacción de los bloques de texto.
+      - **sintaxis 0.5**: coherencia con la redacción de código en los bloques de texto.
       - **código 0.3** : coherencia en lo escrito, i.e. conflicto entre variables.
       - **variables 0.6**: uso de variables asignadas con valores numéricos.
       - **comentarios 0.5**: coherencia entre la descripción y el bloque de texto.
