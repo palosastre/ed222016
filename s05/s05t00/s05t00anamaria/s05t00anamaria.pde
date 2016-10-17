@@ -35,24 +35,24 @@ void draw() {
     for (int y = 0; y <= height; y += height/8) {        //grilla de 9 columnas en el eje y
       if (rombo == true) {                               //si el rombo es verdadero, se dibujará de a cuerdo a la función siguiente
         rombo(x, y, 20, 10);
-      } else {                                           //de lo contrario (si es falso), se borrará
+      } /*else {                                           //de lo contrario (si es falso), se borrará
         rombo = false;
-      }
+      }*/
       if (punto == true) {                               //si el punto es verdadero, se dibujará de a cuerdo a la función siguiente
         punto(x, y, q);
-      } else {                                           //de lo contrario (si es falso), se borrará
+      } /*else {                                           //de lo contrario (si es falso), se borrará
         punto = false;
-      }
+      }*/
       if (triangulo == true) {                           //si el triángulo es verdadero, se dibujará de a cuerdo a la función siguiente
         triangulo(x, y, 15);
-      } else {                                           //de lo contrario (si es falso), se borrará
+      }/* else {                                           //de lo contrario (si es falso), se borrará
         triangulo = false;
-      }
+      }*/
       if (flecha == true) {                              //si la flecha es verdadera, se dibujará de a cuerdo a la función siguiente
         flecha(x, y, q, h);
-      } else {                                           //de lo contrario (si es falso), se borrará
+      }/* else {                                           //de lo contrario (si es falso), se borrará
         flecha = false;
-      }
+      }*/
     }
   }
 }
