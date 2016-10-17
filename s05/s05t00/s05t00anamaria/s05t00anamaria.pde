@@ -80,7 +80,7 @@ void triangulo(int posiX, int posiY, int size) {         //función del triángu
 }
 
 void flecha(int posiX, int posiY, int q, int h) {        //función de la flecha
-  float fle = map(mouseY, 0, width, 0, 255);             //si el mouse se mueve en el eje y, la opacidad de la flecha variará 
+  float fle = map(mouseY, 0, height, 0, 255);             //si el mouse se mueve en el eje y, la opacidad de la flecha variará 
   fill(cal, fle);                                       //relleno color calipso que variará su opacidad según la función fle
   noStroke();                                           //sin stroke
   triangle(posiX + q, posiY, posiX + q, posiY + q, posiX, posiY + q); //triángulo de la flecha 
