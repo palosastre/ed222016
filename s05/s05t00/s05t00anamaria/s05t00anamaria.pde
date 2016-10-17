@@ -44,7 +44,7 @@ void draw() {
         punto = false;
       }
       if (triangulo == true) {                           //si el triángulo es verdadero, se dibujará de a cuerdo a la función siguiente
-        triangulo(x, y, 15 );
+        triangulo(x, y, 15);
       } else {                                           //de lo contrario (si es falso), se borrará
         triangulo = false;
       }
