@@ -14,8 +14,7 @@ int w = 20;                                              //declarar valor para e
 int q = 10;                                              //declarar valor para entero q
 int h = 5;                                               //declarar valor para entero h
 
-color am;                                                //declarar variable color amarillo
-color cal;                                               //declarar variable color calipso
+color am, cal;                                                //declarar variable color amarillo y calipso
 
 void setup() {
 
