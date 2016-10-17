@@ -7,10 +7,8 @@ El código consta de 4 funciones distintas (rombo, punto, triángulo y flecha), 
 determinada para hacer aparecer y desaparecer la figura, y con distintas variaciones a través del movimiento 
 horizontal o vertical del mouse.*/ 
 
-boolean rombo;                                           //declarar que las figuras funcionarán como boolean
-boolean punto;
-boolean triangulo;
-boolean flecha;
+boolean rombo, punto, triangulo, flecha;                 //declarar que las figuras funcionarán como boolean
+
 
 int w = 20;                                              //declarar valor para entero w    
 int q = 10;                                              //declarar valor para entero q
