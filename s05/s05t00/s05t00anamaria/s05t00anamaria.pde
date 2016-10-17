@@ -59,7 +59,7 @@ void draw() {
 
 void rombo(int posiX, int posiY, int w, int q) {         //función del rombo
   float rom = map(mouseX, 0, width, 2, 5);               //si se mueve el mouse en el eje x, el ancho del stroke del rombo variará entre 2 y 5
-  noFill ();                                             //sin relleno
+  noFill();                                             //sin relleno
   strokeWeight(rom);                                     //el stroke variará de a cuerdo a la función rom, es decir entre 2 y 5
   stroke(am);                                            //stroke color amarillo
   quad(posiX + q, posiY, posiX + w, posiY + q, posiX + q, posiY + w, posiX, posiY + q); //rombo en el centro del módulo
@@ -67,27 +67,27 @@ void rombo(int posiX, int posiY, int w, int q) {         //función del rombo
 
 void punto(int posiX, int posiY, int q) {                //función del punto
   float punt = map(mouseX, 0, width, 5, 0);              //si el mouse se mueve en el eje x, el ancho del stroke variará entre 5 y 0
-  strokeWeight (punt);                                   //el stroke variará según la función punt, es decir, entre 5 y 0
-  stroke (cal);                                          //stroke color calipso
-  point (posiX + q, posiY + q);                          //punto en el centro del rombo
+  strokeWeight(punt);                                   //el stroke variará según la función punt, es decir, entre 5 y 0
+  stroke(cal);                                          //stroke color calipso
+  point(posiX + q, posiY + q);                          //punto en el centro del rombo
 }
 
 void triangulo(int posiX, int posiY, int size) {         //función del triángulo
   float trian = map(mouseY, 0, height, size / 2, size);  //si el mouse se mueve en el eje y, el fill cambiará de tamaño entre la mitad y su tamaño completo
-  fill (am);                                             //relleno color amarillo que variará según la función trian
-  noStroke ();                                           //sin stroke
-  triangle (posiX, posiY - trian, posiX - trian, posiY - trian, posiX - trian, posiY); //triángulo esquina superior izquierda
+  fill(am);                                             //relleno color amarillo que variará según la función trian
+  noStroke();                                           //sin stroke
+  triangle(posiX, posiY - trian, posiX - trian, posiY - trian, posiX - trian, posiY); //triángulo esquina superior izquierda
 }
 
 void flecha(int posiX, int posiY, int q, int h) {        //función de la flecha
   float fle = map(mouseY, 0, width, 0, 255);             //si el mouse se mueve en el eje y, la opacidad de la flecha variará 
-  fill (cal, fle);                                       //relleno color calipso que variará su opacidad según la función fle
-  noStroke ();                                           //sin stroke
-  triangle (posiX + q, posiY, posiX + q, posiY + q, posiX, posiY + q); //triángulo de la flecha 
+  fill(cal, fle);                                       //relleno color calipso que variará su opacidad según la función fle
+  noStroke();                                           //sin stroke
+  triangle(posiX + q, posiY, posiX + q, posiY + q, posiX, posiY + q); //triángulo de la flecha 
 
-  strokeWeight (2);                                      //stroke grosor 2px
-  stroke (cal, fle);                                     //stroke color calipso que variará su opacidad según la función fle
-  line (posiX - q, posiY - q, posiX + h, posiY + h);     //línea de la flecha 
+  strokeWeight(2);                                      //stroke grosor 2px
+  stroke(cal, fle);                                     //stroke color calipso que variará su opacidad según la función fle
+  line(posiX - q, posiY - q, posiX + h, posiY + h);     //línea de la flecha 
 }
 
 void keyPressed() {                                      
