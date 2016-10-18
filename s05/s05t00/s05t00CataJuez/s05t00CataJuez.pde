@@ -142,25 +142,25 @@ void circulo(int posX, int posY, float t, float sw) { //float sw?
 }
 
 //void de mi segundo círculo, el cual no aparece ni se nota siempre, puesto que es tapado muchas veces por el cuadrado blanco
-void circulodos(int posX, int posY, float tam, float sw) {
+void circulodos(int posX, int posY, float tam, float sw) { //float sw?
   float t = map(mouseX, 0, width, 2, 100); //El tamaño de este circulovaria de 0 a 200, de izquierda a derecha
   ellipse(posX, posY, t, t);
 }
 
 //void de mi segundo cuadrado
-void cuadrado(int posX, int posY, float tam, float sw) {
+void cuadrado(int posX, int posY, float tam, float sw) { //float sw
   float t = map(mouseY, 0, width, 2, 263); //el tamaño de este cuadrado varia de abajo hacia arriba (relación al eje y)
   rect(posX, posY, t, t);
 }
 
-void cuadradodos(int posX, int posY, float tam, float sw) {
+void cuadradodos(int posX, int posY, float tam, float sw) { //float sw
   float t = map(mouseX, 0, width, 50, 200); //el tamaño de este cuadrado varia de eje x, de 50 a 200 (izquierda derecha)
   rect(posX, posY, t, t);
 }
 
-void cuadradotres(int posX, int posY, float tam, float sw) {
-  //float c = map(mouseX, 0, width, 78, 132); 
-  //float d = map(mouseX, 0, width, 229, 232);
+void cuadradotres(int posX, int posY, float tam, float sw) { //float sw
+  //float c = map(mouseX, 0, width, 78, 132);  ¿Qué es esto?
+  //float d = map(mouseX, 0, width, 229, 232); ¿Qué es esto?
   float t = map(mouseX, 0, width, 0, 100); //el tamaño de este rectángulo varia de izquierda derecha ( de 0 a 100)
   //fill(c, 87, d, 30); //cambio del valor de color de izquierda derecha (al final esto no se usa debido a que el uso del boolean "o" hace que esto no sea perceptible)
   fill(c); 
