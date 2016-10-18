@@ -14,9 +14,9 @@ Esta composición consta de múltiples objetos con opacidad que ese dibujan
 
 //definir variables
 int a;
-int c= color(132, 87, 232, 1);
-int e= color(78, 90, 229, 1);
-int f= color(250, 0, 0, 1);
+int c = color(132, 87, 232, 1);
+int e = color(78, 90, 229, 1);
+int f = color(250, 0, 0, 1);
 color g, h; 
 
 //definición de boolean
@@ -29,8 +29,9 @@ int col, fil, stepx, stepy, t;
 
 void setup() {
   //tamaño de la composición y su color de fondo
-  size (800, 600);  
-  background (255);
+  size(800, 600);  
+  frameRate(10);
+  background(255);
 
   //cuadrado se dibuja desde el centro
   rectMode(CENTER);
@@ -46,35 +47,42 @@ void setup() {
 
 
 void draw() { 
+  background(255);
   //cantidad de fotogramas por segundo
-  frameRate(10);
-  for (int x = 0; x <  width; x += width/12) {
-    for (int y = 0; y <height; y += height/9) {
+  // esta función se usa en el void setup frameRate(10);
+  for (int x = 0; x <  width; x += width / 12) {
+    for (int y = 0; y < height; y += height / 9) {
       noStroke();
 
       //primer boolean "z", para que parezcan solamente los cuadrados al apretar mi tecla "z"
       if (z == true) {
         fill(g);
-        circulodos(x*3, y*3, t, t);
+        // los colores debrían estár dentro de cada función
+        circulodos(x * 3, y * 3, t, t);
         fill(h);
-        circulo(x*2, y*2, height/2, height/2);
+        // los colores debrían estár dentro de cada función
+        circulo(x * 2, y * 2, height / 2, height / 2);
 
         fill(255);
-        cuadrado (x*3, y*3, t, t); //cuadrado más grande de color blanco
+        // los colores debrían estár dentro de cada función
+        cuadrado(x * 3, y * 3, t, t); //cuadrado más grande de color blanco
 
         fill(g);
-        cuadradodos (x*3, y*3, t, t); 
+        // los colores debrían estár dentro de cada función
+        cuadradodos(x * 3, y * 3, t, t); 
 
-        cuadradotres (x*3, y*3, t, t); //cuadrado más pequeño
+        cuadradotres(x * 3, y * 3, t, t); //cuadrado más pequeño
       }
       if (z == false) {
         fill(255);
-        cuadrado (x*3, y*3, t, t); //cuadrado más grande de color blanco
+        // los colores debrían estár dentro de cada función
+        cuadrado(x * 3, y * 3, t, t); //cuadrado más grande de color blanco
 
         fill(g);
-        cuadradodos (x*3, y*3, t, t); 
+        // los colores debrían estár dentro de cada función
+        cuadradodos(x * 3, y * 3, t, t); 
 
-        cuadradotres (x*3, y*3, t, t); //cuadrado más pequeño
+        cuadradotres(x * 3, y * 3, t, t); //cuadrado más pequeño
       }
 
 
