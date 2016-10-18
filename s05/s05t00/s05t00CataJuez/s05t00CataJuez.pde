@@ -136,8 +136,9 @@ void p(int posX, int posY, float tam, float sw) { // que hacen los dos últimos 
 }
 
 //void de mi primer círculo
-void circulo(int posX, int posY, float t, float sw) {
+void circulo(int posX, int posY, float t, float sw) { //float sw?
   ellipse(posX, posY, t, t);
+  // dónde está el float sw?
 }
 
 //void de mi segundo círculo, el cual no aparece ni se nota siempre, puesto que es tapado muchas veces por el cuadrado blanco
