@@ -181,7 +181,7 @@ void keyPressed() {
 // Void que es llamado por el void draw a través de un if (donde también es llamado el boolean "b" donde se usa la tecla "a")
 void fn1() {
   fill(0);
-  ellipse(400, 300, 0, 0);
+  ellipse(400, 300, 0, 0); // se dibuja una elipse de tamaño 0
 }
 
 void fn2() {
