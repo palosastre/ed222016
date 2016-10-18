@@ -47,7 +47,6 @@ void setup() {
 
 
 void draw() { 
-  background(255);
   //cantidad de fotogramas por segundo
   // esta función se usa en el void setup frameRate(10);
   for (int x = 0; x <  width; x += width / 12) {
@@ -121,18 +120,19 @@ void draw() {
     for (int y = 0; y <height; y += height/50) {
       strokeWeight(8); 
       stroke (e); 
-      p(x, y, 2, x);
+      p(x, y, 2, x); // que hacen los dos últimos parámetros?
     }
   }
 }
 
 //void de mis puntos
-void p(int posX, int posY, float tam, float sw) { 
+void p(int posX, int posY, float tam, float sw) { // que hacen los dos últimos parámetros?
   float colorp = map(mouseX, 0, width, 60, 255); // el color del stroke de mis puntos cambia de gris a blanco (de izquierda a derecha)
   float t = map(mouseX, 0, width, 0, 2); //cambia el tamaño de mis puntos de 0 a 2 (de izquierda a derecha)
   strokeWeight(t);
   stroke(colorp);
   point(posX, posY);
+  // nada
 }
 
 //void de mi primer círculo
