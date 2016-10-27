@@ -1,0 +1,56 @@
+// Expresión Digital II - Diseño Digital - Facultad de Diseño- Universidad del Desarrollo - 2016
+// Catalina Ringeling Selman
+// s10c01cringelings
+
+/* Al correr el Programa, se verán figuras que rotan en cierto ángulo (círculos y líneas), otras 
+ figuras que rotan y van cambiando de forma (rectángulos) y todas las figuras se van moviendo en el canvas.
+ Se crea un fondo blanco donde se dibujan dos círculos que giran con una linea cada uno y van girando en su 
+ propio ángulo y se van moviendo con respecto al eje x e y. A igual que un rectángulo que se dibuja que va 
+ cambiando de forma y tamaño mediante va girando en su propio ángulo mientras se mueve en el eje x e y.
+ */
+
+int a;              //Se crea una variable entera para usar en uno de los objetos.
+color c1, c2, c3;   //Se señalan las Variables a usar en los colores
+float amt;          //Se señala un valor decimal a usar en los colores
+boolean cambio;     //Se crea un boolean llamado cambio.
+
+Catalina[] c = new Catalina[25];  // Se crea la clase Catalina
+
+void setup() {                            //Se ejecuta al iniciar el programa.
+  size(600, 600);                         //Tamaño del Canvas
+  cambio =  true;                         //Se indica si el boolean es verdadero o falso para cuando se inicie el programa.
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5; j++) {
+      int total = j + i * 5;
+      float ix = i * 25;
+      float jy = j * 25;
+      c[total] = new Catalina(ix, jy, ix + 5, jy + 5, (int)random(0), (int)random(0), random(0));  //se mencionan las variables j, i, ix y ji
+      println(total);
+    }
+  }
+}
+
+void draw() {                              //Se ejecuta cada vez que se inicia el programa. 
+  background(253);                         //Color de fondo - Blanco.
+  translate(width * .05, height * .05);    //El origen de cada variable se cambia. El alto x .05 y el ancho x .05.
+  a++;                                     //El a va aumentando 1 en 1.
+
+/*Cada cierto tiempo, el boolean con nombre cambio, cambia de ser verdadero a ser falso y nuevamente verdadero, así sucesivamente. 
+En el caso que sea falso, se hacen rectángulos.*/
+  if (frameCount % 200 == 0) {  // Se ocupa para cambiar estados del boolean. "Refresca" cada void draw.
+    cambio = !cambio;
+  }
+  if (cambio == true) {
+    for (int i = 0; i < c.length; i++) {
+      c[i].lineaCirculo1();
+      c[i].lineaCirculo2();
+      c[i].mover();
+    }
+  }   
+  if (cambio == false) {
+    for (int i = 0; i < c.length; i++) {
+      c[i].rectangulo();
+      c[i].mover1();
+    }
+  }
+}
