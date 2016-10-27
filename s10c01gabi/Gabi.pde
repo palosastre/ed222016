@@ -1,13 +1,15 @@
+//Crea clase Gabi
 class Gabi {
   boolean on;
   float x, y, x1, y1, velx, vely, angulo;
   float ang = 95;
-
+// Conección entre las variables del código principal s10c01gabi con las de la clase Gabi
   Gabi (float x, float y, float x1, float y1, float velx, float vely, float angulo) {
     this.x = x;
     this.y = y;
     this.x1 = x1;
     this.y1 = y1;
+    //Velocidad con la que se moverán
     this.velx = velx * 2;
     this.vely = vely * 2;
     this.angulo = angulo;
@@ -16,11 +18,13 @@ class Gabi {
   void dibujo() {
     pushMatrix();
     noStroke();
-    fill(97, 209, 206);
+    //Color Turqueza
+    fill(97, 209, 206);  
     // ellipse(x, y, 4, 4);
     popMatrix();
   }
 
+//Crean las figuras 
   void linea(float angulo) {
     pushMatrix();
     translate(x, y);
@@ -60,17 +64,20 @@ class Gabi {
       }
     }
   }
+  
+  // Genera movimiento
   void mover() {
     x += velx;
     y += vely;
     angulo = 0.08;
   }
 
+// Grilla en el canvas
   void bordes() {
-    if (x > x1 || x < x1 - 20) {
+    if (x > x1 || x < x1 - 50) {
       velx *= -1;
     }
-    if (y > y1 || y < y1 - 20) {
+    if (y > y1 || y < y1 - 50) {
       vely *= -1;
     }
   }
