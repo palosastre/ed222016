@@ -49,9 +49,9 @@ void draw() {
     v[i].bordes();
     v[i].linea(f, g);
 
-    if (frameCount % 10 == 0) radioGiro *= -1;
-    if (frameCount % 30 == 0) grosor *= -1;
-    if (frameCount % 90 == 0) b = !b;
+    if (frameCount % 10 == 0) {radioGiro *= -1;}
+    if (frameCount % 30 == 0) {grosor *= -1;}
+    if (frameCount % 90 == 0) {b = !b;}
 
     f+= radioGiro;
     g+= grosor;
