@@ -3,21 +3,23 @@
 //s10c01isi.
 
 /*
-En este código se llamarán distintas clases de manera autónoma a través de un boolean.
-Las clases serán de figuras y movimientos, y a través de lo aprendido se logrará generar
+En este código se llamarán distintos voids de manera autónoma a través de un boolean y 
+un frameCount.
+Los voids serán de figuras y movimientos, y a través de lo aprendido se logrará generar
 distintas composiciones con movimiento.
-La primera composición es la de elipses, que están dispuestas en la grilla de una forma
+El primer void es el de "elipses", que están dispuestas en la grilla de una forma
 circular, generando en primer lugar un módulo de 14 elipses, y este repitiéndolo 10 veces
 rotandolo con el centro del canvas como eje. Este modulo cambia su disposición en el eje
 'x' e 'y' lo que hace que las secuencias de elipses descritas se acerquen y alejen del
 centro del canvas.
-Por otra parte tenemos la función de transición que hace que la función descrita 
+Por otra parte tenemos el void de transición que hace que la función descrita 
 anteriormente rote sobre su eje 'y' cambiando el valor de 'x' de la función.
 Por último tenemos el void display que crea una composición de triángulos que rotan sobre
 su propio eje gracias a la función rotate y sobre el eje central de la composición 
 gracias a translate cambiando el punto 0,0 del canvas lo que hace que giren y a la vez
 se alejen y acerquen.
  */
+
 
 
 Objeto [] o = new Objeto [1];                                                          // Creo "Objeto".
