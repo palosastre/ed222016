@@ -51,9 +51,9 @@ void draw(){
   }
 // Posición de la grilla del segundo objeto.
   translate(width * 0.3, height * 0.3);  
-   for (int l = 0; l < f.length; l++) {
-// Creación de 1 forma y 1 movimiento
-    f[l].formaCinco();
-    f[l].movimientoCuatro();
-  }
+//    for (int l = 0; l < f.length; l++) {
+// // Creación de 1 forma y 1 movimiento
+//     f[l].formaCinco();
+//     f[l].movimientoCuatro();
+//   }
 }

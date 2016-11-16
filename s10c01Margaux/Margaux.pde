@@ -39,8 +39,8 @@ class Margaux {
 
 // Ajuste del primer movimiento.
  void movimientoUno() {
-    x += velx++;
-    y += vely++;
+    x += velx; // anteriormente velx y vely se estaban aumentando en cada loop por si mismas.
+    y += vely; // de esta forma velx y vely llegan a tener valores mayores a la función movimientoTres
     rotation += 0.1;
   }
   
@@ -76,10 +76,10 @@ class Margaux {
 // Ajuste del tercer movimiento que es diferente dependiendo de la posición x e y del rectángulo.
    void movimientoTres() {
     if (x > tx || x < tx - 25) {
-      velx *= -0.05;
-    }
+      velx *= -1; //antes el valor dejaba en 0 luego de un tiempo. dejar en -1 cambiar el valor
+    }             // y entonces su dirección.
     if (y > ty || y < ty - 25) {
-      vely *= -0.05;
+      vely *= -1;
     }
     angulo +=0.05;
   } 
