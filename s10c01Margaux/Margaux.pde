@@ -51,7 +51,7 @@ class Margaux {
     rotate(rotation);
     strokeWeight(2);
     stroke(#00BC9C);
-    noFill();
+    // noFill(); //la función line por defecto no tiene fill
     line(0, 0, 15, 15);    
     popMatrix();
   }
