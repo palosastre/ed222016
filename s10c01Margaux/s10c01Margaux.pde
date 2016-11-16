@@ -3,7 +3,7 @@
 //s10c01margaux
 // prueba
 /*
-El cetramen debe contener 5 grillas con 3 formas y movimientos diferentes.
+El certamen debe contener 5 grillas con 3 formas y movimientos diferentes.
 */
 
 // Creación de dos objetos para creer 2 grillas diferentes. Una de 625 elementos y una de 25 elementos.
@@ -13,7 +13,7 @@ Gomar[] f = new Gomar [25];
 // Inicialización.
 void setup(){
   size(600, 600);                       // tamaño del canvas
-// Inicialización de la loop del primer objeto, de las distancias y posiciónes.
+// Inicialización de la loop del primer objeto, de las distancias y posiciones.
   for (int i = 0; i < 25; i++) {
     for (int j = 0; j < 25; j++) {
       int total = j + i * 25;
@@ -23,7 +23,7 @@ void setup(){
     }
   }
   
-// Inicialización de la loop del segundo objeto, de las distancias y posiciónes.
+// Inicialización de la loop del segundo objeto, de las distancias y posiciones.
   for (int l = 0; l < 5; l++) {
     for (int k = 0; k < 5; k++) {
       int total = l + k * 5;

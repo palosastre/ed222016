@@ -15,7 +15,7 @@ class Margaux {
     this.r = 10;
   }
   
-// Dibujo de la primera forma, una linea de 4px que vibra.
+// Dibujo de la primera forma, una línea de 4px que vibra.
     void formaUno() {
     pushMatrix();
     translate(x, y);
