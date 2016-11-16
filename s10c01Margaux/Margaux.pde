@@ -1,7 +1,7 @@
 // Llamada del primer objeto.
 class Margaux {
 // Creación de variables.
-  float x, y, tx, ty, velx, vely, angulo, a, r, rotation, tercero;
+  float x, y, tx, ty, velx, vely, angulo, a, rotation, tercero;
   
 // Declaración de las variables.
   Margaux (float x, float y, float tx, float ty, float velx, float vely, float angulo) {
@@ -12,7 +12,7 @@ class Margaux {
     this.velx = velx * 0.5; 
     this.vely = vely * 0.5;
     this.angulo = angulo;
-    this.r = 10;
+    // this.r = 10; // variables sin uso
   }
   
 // Dibujo de la primera forma, una línea de 4px que vibra.
@@ -81,7 +81,7 @@ class Margaux {
     if (y > ty || y < ty - 25) {
       vely *= -1;
     }
-    angulo +=0.05;
+    angulo += 0.05;
   } 
 }
 
