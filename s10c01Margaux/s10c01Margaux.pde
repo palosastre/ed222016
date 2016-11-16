@@ -5,6 +5,7 @@
 /*
 El certamen debe contener 5 grillas con 3 formas y movimientos diferentes.
 */
+// NIVEL 2.6: una grilla (nivel 2), tres movimientos (nivel 2), cuatro figuras (nivel 4)
 
 // Creación de dos objetos para creer 2 grillas diferentes. Una de 625 elementos y una de 25 elementos.
 Margaux[] e = new Margaux [625];  
@@ -51,9 +52,9 @@ void draw(){
   }
 // Posición de la grilla del segundo objeto.
   translate(width * 0.3, height * 0.3);  
-//    for (int l = 0; l < f.length; l++) {
-// // Creación de 1 forma y 1 movimiento
-//     f[l].formaCinco();
-//     f[l].movimientoCuatro();
-//   }
+   for (int l = 0; l < f.length; l++) {
+// Creación de 1 forma y 1 movimiento
+    f[l].formaCinco();
+    f[l].movimientoCuatro();
+  }
 }
