@@ -20,8 +20,7 @@ gracias a translate cambiando el punto 0,0 del canvas lo que hace que giren y a 
 se alejen y acerquen.
  */
 
-// NIVEL 2: Pero no hay grilla, sí hay 3 movimivientos del nivel y 3 figuras del nivel 3
-// NIVEL 2
+// NIVEL 0.6 (2): Pero no hay grilla, sí hay 3 movimientos (nivel 2) y 3 figuras (nivel 3)
 
 Objeto [] o = new Objeto [1]; //es solo un objeto.                                                         // Creo "Objeto".
 boolean evalDivision;
