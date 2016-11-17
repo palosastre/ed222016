@@ -34,9 +34,18 @@ Cada semana se creará un archivo [wiki](https://github.com/nicotron/ed222016/wi
 | `5.98` **Ana María Ortiz**      | `5.72` **Margaux Leroy**   | `5.06` **Maximiliano Cordero** |
 | :------------------------------ | -------------------------- | ------------------------------ |
 | `4.81` **Benjamín Guten**       | `4.72` **Elena Errázuriz** | `4.28` **Isidora Ordoñez**     |
-| `4.16` **Paulina Descouvieres** | `3.88` **Catalina Juez**   | `3.72` **Maite Iturriaga**      |
+| `4.16` **Paulina Descouvieres** | `3.88` **Catalina Juez**   | `3.72` **Maite Iturriaga**     |
 | `3.68` **Francisco Barria**     | `2.68` **Ricardo Vidal**   | `2.48` **Javiera Ramírez**     |
 | `2.04`  **Dante Crovetto**      | `1.0` **Gabriela Navarro** | `1.0` **Catalina Ringeling**   |
+
+#### Notas Certamen 01 - Noviembre 03
+
+| `3.73` **Ana María Ortiz**       | `5.11` **Margaux Leroy**    | `5.33` **Maximiliano Cordero** |
+| :------------------------------- | --------------------------- | ------------------------------ |
+| `0.00` **Benjamín Guten***       | `5.29` **Elena Errázuriz**  | `4.34` **Isidora Ordoñez**     |
+| `0.00` **Paulina Descouvieres*** | `4.41` **Catalina Juez**    | `4.68` **Maite Iturriaga**     |
+| `0.00` **Francisco Barria***     | `4.51` **Ricardo Vidal**    | `3.64` **Javiera Ramírez**     |
+| `5.36`  **Dante Crovetto**       | `3.32` **Gabriela Navarro** | `2.36` **Catalina Ringeling**  |
 
 
 
