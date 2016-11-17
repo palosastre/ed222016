@@ -58,12 +58,12 @@ Entregando una visualización con dos niveles uno general y uno particular con d
 Los datos son:
 Por defecto debe existir el **día**, sumado a un set de variables: 
 
-**Temperatura**: Mínima, media, máxima
-**Punto de rocío**: Mínima, media, máxima
-**Humedad**: Mínima, media, máxima
-**Presión atmosférica**: Mínima, media, máxima
-**Visibilidad**: Mínima, media, máxima
-**Viento**: Mínima, media, máxima
+**Temperatura**: Mínima, media, máxima  
+**Punto de rocío**: Mínima, media, máxima  
+**Humedad**: Mínima, media, máxima  
+**Presión atmosférica**: Mínima, media, máxima  
+**Visibilidad**: Mínima, media, máxima  
+**Viento**: Mínima, media, máxima  
 **Precipitación**: Total  
 **Eventos**: Lluvia, tormenta, nieve, truenos, niebla
 
