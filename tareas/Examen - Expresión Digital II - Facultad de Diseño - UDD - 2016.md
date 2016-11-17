@@ -64,8 +64,8 @@ Por defecto debe existir el **día**, sumado a un set de variables:
 **Presión atmosférica**: Mínima, media, máxima
 **Visibilidad**: Mínima, media, máxima
 **Viento**: Mínima, media, máxima
-**Precipitación**: Total
-**Eventos**: Lluvia, tormenta, nieve, truenos, niebla, 
+**Precipitación**: Total  
+**Eventos**: Lluvia, tormenta, nieve, truenos, niebla
 
 **Temperatura**
 
