@@ -29,5 +29,16 @@ Si alguien ve que existe algún problema general en los ejemplos, tareas o guía
 Cada semana se creará un archivo [wiki](https://github.com/nicotron/ed222016/wiki) con el nombre de la semana y con la información de cada clase, contenido y guías, para que cada alumno pueda recurrir a ella en caso de duda. Si aún no se responden las dudas particulares pueden generar un [issue](https://github.com/nicotron/ed222016/issues) y si aún en conjunto no han podido resolver esa duda, se puede recurrir a un email tanto al profesor como al ayudante para resolver ese issue. Se espera que ésta última instancia no ocurra nunca ya que los esfuerzos por entregar el contenido a prueba de toda duda son muy altos.
 
 ------
+#### Notas Certamen 00 - Septiembre 01
+
+| `5.98` **Ana María Ortiz**      | `5.72` **Margaux Leroy**   | `5.06` **Maximiliano Cordero** |
+| :------------------------------ | -------------------------- | ------------------------------ |
+| `4.81` **Benjamín Guten**       | `4.72` **Elena Errázuriz** | `4.28` **Isidora Ordoñez**     |
+| `4.16` **Paulina Descouvieres** | `3.88` **Catalina Juez**   | `3.72` **Maite Iturriaga**      |
+| `3.68` **Francisco Barria**     | `2.68` **Ricardo Vidal**   | `2.48` **Javiera Ramírez**     |
+| `2.04`  **Dante Crovetto**      | `1.0` **Gabriela Navarro** | `1.0` **Catalina Ringeling**   |
+
+
+
 
 Este documento se irá llenando con más información a medida que avance el curso.
