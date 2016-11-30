@@ -7,7 +7,9 @@ Carrusel doble cruzado de líneas blancas, con variación en ángulo y forma seg
  Adicionalmente el fondo es una grilla de esferas sin fondo de color arcoíris oscilante, que pulsan cambiando su tamaño.
  Se intentó usar class para trabajar los voids, pero el código se volvió muy complejo y la conversión a class se volvió muy hostil.
  */
-
+// NIVEL 0.6(1): Dos figuras, dos movimientos, cero grilla.
+// El mayor error es que se dibujó un solo objeto que aparenta ser más objetos visualmente. 
+// Se espera que este error pueda ser solucionado para el exmanen, ya que de no ser logrado, no podrá entregar una visualización de datos.
 
 int i, j;                                 // i & j corresponden a las coordenadas para la grilla de esferas.
 float a, b, e, k, x, y, x1, y1, y2;      
