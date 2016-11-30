@@ -16,7 +16,7 @@ boolean d, h;                             // On/Off que producen las variaciones
 Objeto o;
 
 void setup() {
-  size (600, 600);
+  size(600, 600);
   colorMode(HSB, 100);                     // HSB para facilitar el cambio del color c1.
   o = new Objeto();                        // Indicar que o, corresponde a Objeto.
 }
@@ -35,10 +35,10 @@ void draw() {
 
   if (frameCount % 150 == 0) {              // Gatillante para cambio cada 2,5 seg (Tamaño).
 
-    d=!d;
+    d = !d;
   }
   if (frameCount % 450 == 0) {              // Gatillante para cambio cada 7,5 seg (Cono).
 
-    h=!h;
+    h = !h;
   }
 }
