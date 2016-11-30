@@ -3,13 +3,13 @@
 // s10c01
 
 /*
-Carrusel doble cruzado de líneas blancas, con variación en ángulo y forma según periodos distintos (T1=2,5, T2=7,5).
+Carrusel doble cruzado de líneas blancas, con variación en ángulo y forma según períodos distintos (T1 = 2,5, T2 = 7,5).
  Adicionalmente el fondo es una grilla de esferas sin fondo de color arcoíris oscilante, que pulsan cambiando su tamaño.
  Se intentó usar class para trabajar los voids, pero el código se volvió muy complejo y la conversión a class se volvió muy hostil.
  */
 
 
-int i, j;                                 // i&j corresponden a las coordenadas para la grilla de esferas.
+int i, j;                                 // i & j corresponden a las coordenadas para la grilla de esferas.
 float a, b, e, k, x, y, x1, y1, y2;      
 boolean d, h;                             // On/Off que producen las variaciones.
 
@@ -26,9 +26,9 @@ void draw() {
   background(0, 0, 35);
   noFill();
 
-  o.aumen();                          // Aqui estan las variables que crean el movimiento de las figuras y grillas.
+  o.aumen();                          // Aquí estan las variables que crean el movimiento de las figuras y grillas.
   o.grilla();                         // Grilla de esferas de colores arcoiris.
-  o.lineas();                         // Grilla de las lineas blancas en constante movimiento.
+  o.lineas();                         // Grilla de las líneas blancas en constante movimiento.
   o.timer1();                         // Contiene las variables de cambio para (d).
   o.timer2();                         // Contiene las variables de cambio para (h).
 
