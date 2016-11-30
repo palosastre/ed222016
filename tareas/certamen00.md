@@ -2,7 +2,7 @@
 
 s04c00
 
-El certamen01 tiene una estructura de 4 partes:
+El certamen00 tiene una estructura de 4 partes:
 
 1. Descripción del código
 2. Código: estructura y complejidad
