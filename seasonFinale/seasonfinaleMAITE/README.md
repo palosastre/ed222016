@@ -1,3 +1,5 @@
+Falta contextualizar quien hace el programa.
+
 Examen processing, mi código lee los datos meteorológicos de Aruba 2015.
  es necesario el uso del teclado para ver el proyecto, teclas: 1,2,3,4.
 
