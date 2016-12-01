@@ -1,4 +1,4 @@
-/* Expresión Digital II - Diseño Digital - UDD- 2016
+/* Expresión Digital II - Diseño Digital - UDD - 2016
  Maite Iturriaga Batlle
  seasonfinale_MAITE
  
