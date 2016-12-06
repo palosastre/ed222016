@@ -1,4 +1,4 @@
-/* Expresión Digital II - Diseño Digital - UDD- 2016
+/* Expresión Digital II - Diseño Digital - UDD - 2016
  Maite Iturriaga Batlle
  seasonfinale_MAITE
  
@@ -57,7 +57,7 @@ void setup() {
 
     k = 30;
 
-    e[i] = new Maite( index, maxt, meant, mint, maxV, meanV, minV, prec, nube, maxH, meanH, minH);
+    e[i] = new Maite(index, maxt, meant, mint, maxV, meanV, minV, prec, nube, maxH, meanH, minH);
   }
 }
 void draw() {
@@ -68,7 +68,7 @@ void draw() {
   text("KeyPressed 1, 2, 3, 4", 535, 20);
 
 
-
+  //descripción general del bloque de texto
   if (manitos == 1) {
     textFont(cuerpo);
     fill(255);
@@ -101,24 +101,25 @@ void draw() {
     text("Puntos: Stroke representa los mm - Rectángulos: eje x y su opacidad representan", 400, 720);
   }
 
-  for (int i = 0; i < e.length; i++) {
 
+  for (int i = 0; i < e.length; i++) {
+    //descripción general del bloque de texto
     if (manitos == 1) {
       e[i].diasprincipe(k);
       e[i].visibilidad();
     }
-
+    //descripción general del bloque de texto
     if (manitos == 2) {
       e[i].dias(k);
       e[i].humedad();
     }
 
-
+    //descripción general del bloque de texto
     if (manitos == 3) {
       e[i].dias(k);
       e[i].temperatura();
     }
-
+    //descripción general del bloque de texto
     if (manitos == 4) {
 
       e[i].dias(k);
@@ -130,7 +131,7 @@ void draw() {
 
 void keyPressed() {
 
-  if (key =='1') {
+  if (key == '1') {
     manitos = 1;
     k = 51; //Año
   }
@@ -145,7 +146,7 @@ void keyPressed() {
     k = 180; //Semestre
   }
 
-  if (key =='4') {
+  if (key == '4') {
     manitos = 4;
     k = 30; //Mes
   }

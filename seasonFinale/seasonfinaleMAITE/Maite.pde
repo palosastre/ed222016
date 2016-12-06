@@ -47,19 +47,19 @@ class Maite {
    */
   void humedad() {
     float locura = map(minH, 6, 31, 0, 30);
-    float locura2 = map(minH, 6, 31, 1, 5);
+    float locura2 = map(minH, 6, 31, 1, 5); //el map esta fuera de rango en el set de variable
     fill(blanco, locura);
     noStroke();
     ellipse(x, y - 16, locura2, locura2); //arriba
 
     float loca = map(meanH, 6, 31, 31, 70);
-    float loca2 = map(meanH, 6, 31, 5, 8);
+    float loca2 = map(meanH, 6, 31, 5, 8);//el map esta fuera de rango en el set de variable
     fill(blanco, loca);
     noStroke();
     ellipse(x, y, loca2, loca2); //centro
 
     float loco = map(maxH, 6, 31, 71, 100);
-    float loco2 = map(maxH, 6, 31, 8, 10);
+    float loco2 = map(maxH, 6, 31, 8, 10);//el map esta fuera de rango en el set de variable
     fill(blanco, loco);
     noStroke();
     ellipse(x, y + 16, loco2, loco2); //abajo
