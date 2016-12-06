@@ -1,16 +1,15 @@
 //Expresión Digital - Diseño Digital - UDD - 2016
 //Catalina Juez
 //Seasonfinale
-//Falta una descripción sobre el trabajo, tanto de la base de datos como de las teclas que se utilizan.
 
-Objeto [] e;
+objeto [] e;
 Table tabla;
 int fila, d;
 
 void setup() {
 
   textSize(35);
-  fill(0, 0, 0);
+  fill (0, 0, 0);
   text("Ttaly", 100, 30); 
 
   textSize(16);
@@ -23,7 +22,7 @@ void setup() {
   fullScreen();
   background(255, 255, 255);
   tabla = loadTable("Firenze_Peretola_Italy.csv", "header");
-  e = new Objeto[tabla.getRowCount()];
+  e = new objeto[tabla.getRowCount()];
 
   for (int i = 0; i < tabla.getRowCount(); i++) {
     int index = i;
@@ -32,28 +31,32 @@ void setup() {
     int maxt = fila.getInt("Max TemperatureC");
 
     d = 30;
-    e[i] = new Objeto(index, mint, maxt, i);
+    e[i] = new objeto( index, mint, maxt, i);
   }
 }
 
 void draw() {
   background(230);
-  for (int i = 0; i < e.length; i++) {
+  // for (int i = 0; i < e.length; i++) {
 
-  e[i].dias(d);
-  e[i].cuadrado();
-  e[i].cuadradodos();
- }
+  //   e[i].dias(d);
+  //   e[i].cuadrado();
+  //   e[i].cuadradodos();
+  // }
+      e[frameCount].dias(d);
+    e[frameCount].cuadrado();
+    e[frameCount].cuadradodos();
+ 
 }
 
 void keyPressed() {
-  if (key == 'a') {
+  if (key =='a') {
     d = 30; // año
   }
   if (key == 's') {
     d = 180; //semestre
   }
-  if (key == 'w') {
+  if (key =='w') {
     d = 7; //semana
   }
   if (key == 'm') {
