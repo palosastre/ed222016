@@ -1,26 +1,27 @@
-class objeto {
+class Objeto {
   int i, index, paso, mint, maxt;
   float x, y, meanv, maxv, angulo, angulodos, ty, radius;
   String titulo;
   boolean Speed;
 
-  objeto(int t_index, int t_maxt, int t_mint, int t_i) {
+  Objeto(int t_index, int t_maxt, int t_mint, int t_i) {
 
     x = 0;
     y = 0;
     this.angulo = angulo;    
     this.angulodos = angulodos;
     rectMode(CENTER);
-   mint = t_mint;
+    mint = t_mint;
     maxt = t_maxt;
     i=t_i;
     index = t_index;
   }
 
+//Descripción de la función
   void cuadrado() {
     float cuadrado = map(mint, -5, 23, 0, 10 );
     noStroke();
-    fill (105, 150, 207);
+    fill(105, 150, 207);
     pushMatrix();
     translate(x, y);
     rotate(angulo);
@@ -28,9 +29,10 @@ class objeto {
     popMatrix();
   }
 
+//Descripción de la función
   void cuadradodos() {
     float cuadradodos = map(maxt, 5, 39, 10, 30);
-    stroke (206, 106, 106);
+    stroke(206, 106, 106);
     strokeWeight(5);
     fill (255, 255, 255, 0);
     pushMatrix();
@@ -40,18 +42,21 @@ class objeto {
     popMatrix();
   }
 
+//Descripción de la función
   void mover() {
     float mover = map(mint, 2, 40, 0, 0.2 );
     angulo += mover;
     ty++;
   }
 
+//Descripción de la función
   void moverdos() {
     float moverdos = map(maxt, 3, 47, 0, 0.3 );
     angulodos += moverdos;
     ty++;
   }
 
+//Descripción de la función
   void dias(int paso) {
     //angulo = -PI/2;
     for (int i = 0; i < e.length; i++) {
