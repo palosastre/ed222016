@@ -3,7 +3,7 @@ void tecLeft() {
     if (select != 0) {
       select -= 1;
       semanaDay -= 1;
-      if ( semanaDay < 0) semanaDay = 6;
+      if (semanaDay < 0) semanaDay = 6;
     }
   } else {
     if (weekS > 6) {
@@ -21,9 +21,9 @@ void tecRight() {
       if ( semanaDay > 6) semanaDay = 0;
     }
   } else {
-    if (weekS <357) {
-      weekS +=7;
-      weekO +=7;
+    if (weekS < 357) {
+      weekS += 7;
+      weekO += 7;
     }
   }
 }
@@ -35,8 +35,8 @@ void tecUp() {
     }
   } else {
     if (weekS > 27) {
-      weekS -=28;
-      weekO -=28;
+      weekS -= 28;
+      weekO -= 28;
     }
   }
 }
@@ -48,8 +48,8 @@ void tecDown() {
     }
   } else {
     if (weekS < 323) {
-      weekS +=28;
-      weekO +=28;
+      weekS += 28;
+      weekO += 28;
     }
   }
 }
