@@ -54,7 +54,7 @@ void setup() {
 }
 
 void draw() {
-  //titulo
+  //título
   background(65);
   textFont(titulo);
   fill(255);
@@ -125,7 +125,7 @@ void draw() {
 
 void keyPressed() {
 
-  if (key =='1') { //semanas
+  if (key == '1') { //semanas
     p = 1;
     t = 7;
   }
@@ -139,7 +139,7 @@ void keyPressed() {
     t = 180;
   }
 
-  if (key =='4') { //día
+  if (key == '4') { //día
     p = 4;
     t = 30;
   }
