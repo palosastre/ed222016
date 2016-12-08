@@ -39,7 +39,7 @@ class Dia {
 
 
     pushMatrix();
-    translate(width/2, height/2);
+    translate(width / 2, height / 2);
     flechaViento();
     popMatrix();
   }
@@ -72,8 +72,8 @@ class Dia {
   }
 
   void precip() {
-    for (int i = 0; i < width; i+= width/precipitation) {
-      for (int j = 0; j < height; j+= height/precipitation) {
+    for (int i = 0; i < width; i += width / precipitation) {
+      for (int j = 0; j < height; j += height / precipitation) {
         if (precipitation > 1) {
           fill(200, 200, 255);
           noStroke();
@@ -90,7 +90,7 @@ class Dia {
     posY2 = map(meanT, -13, 18, 0, height);
     posY3 = map(maxT, -13, 18, 0, height);
     stroke(255);
-    line(posX+25, height, posX+25, 0);
+    line(posX + 25, height, posX+25, 0);
     noStroke();
     ellipseMode(CORNER);
     fill(200, 20, 20);
@@ -104,7 +104,7 @@ class Dia {
   void eventos(int r) {
 
     pushMatrix();
-    translate(width/2, height/2);
+    translate(width / 2, height / 2);
     imageMode(CENTER);
     tint(255, transp);
     foto = loadImage(eventos + ".png");  
