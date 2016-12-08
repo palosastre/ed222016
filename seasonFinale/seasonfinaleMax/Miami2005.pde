@@ -1,6 +1,6 @@
 class Miami2005 {
 
-  //VDeclarar las variables del class
+  //Declarar las variables del class
   String dia;
 
   int index;
@@ -40,15 +40,15 @@ class Miami2005 {
         float factor2 = map(paso, 7, 182, .01, .3);
         float factor3 = map(paso, 7, 182, .9, 1.3);
 
-        float x1 = map(index % paso, 0, paso-1, width * factor2, width * factor3);
+        float x1 = map(index % paso, 0, paso - 1, width * factor2, width * factor3);
         x = x1;
 
-        float y1 = map((i), 0, 365/paso, height * factor, height * factor1);
+        float y1 = map((i), 0, 365 / paso, height * factor, height * factor1);
         y = y1;
       }
     }
   }
-
+//Falta descripción del bloque de texto
   void semestre(int paso) {
     for (int i = 0; i < m.length; i++) {
       if (index >= i * paso && index < i * paso + paso) {
@@ -57,15 +57,15 @@ class Miami2005 {
         float factor2 = map(paso, 7, 182, .08, .03);
         float factor3 = map(paso, 7, 182, 1.9, .96);
 
-        float x1 = map(index % paso, 0, paso-1, width * factor2, width * factor3);
+        float x1 = map(index % paso, 0, paso - 1, width * factor2, width * factor3);
         x = x1;
 
-        float y1 = map((i), 0, 365/paso, height * factor, height * factor1);
+        float y1 = map((i), 0, 365 / paso, height * factor, height * factor1);
         y = y1;
       }
     }
   }
-
+//Falta descripción del bloque de texto
   void estacion(int paso) {
     //an = -PI/2;
     for (int i = 0; i < m.length; i++) {
@@ -75,17 +75,17 @@ class Miami2005 {
         float factor2 = map(paso, 7, 182, .06, .05);
         float factor3 = map(paso, 7, 182, .51, 1.5);
 
-        float x1 = map(index % paso, 0, paso-1, width * factor2, width * factor3);
+        float x1 = map(index % paso, 0, paso - 1, width * factor2, width * factor3);
         x = x1;
 
-        float y1 = map((i), 0, 365/paso, height * factor, height * factor1);
+        float y1 = map((i), 0, 365 / paso, height * factor, height * factor1);
         y = y1;
       }
     }
   }
 
 
-
+//Falta descripción del bloque de texto
   void tMax() {
 
     float d = map(tmax, 21, 34, 5, 25);
@@ -98,7 +98,7 @@ class Miami2005 {
     fill(blue);
     ellipse(x, y, maprain, maprain);
   }
-
+//Falta descripción del bloque de texto
   void hMax() {
 
     float maphmax = map(hmax, 68, 100, 0, 255);
@@ -111,7 +111,7 @@ class Miami2005 {
     ellipse(x, y, maphmaxcolor, maphmaxcolor);
 
   }
-
+//Falta descripción del bloque de texto
   void katrina() {
 
     float maphmax = map(hmax, 68, 100, 255, 100);
@@ -121,12 +121,12 @@ class Miami2005 {
 
 
     fill(blue);
-    rect(x-6, y, maprain/10, maprain);
+    rect(x-6, y, maprain / 10, maprain);
     fill(maphmax, 0, 0);
     noStroke();
     ellipse(x, y, mapgust, mapgust);
   }
-
+//Falta descripción del bloque de texto
   void leyenda1() {
 
     fill(255);
@@ -154,7 +154,7 @@ class Miami2005 {
     text("Lluvia", 1020, 865);
   }
 
-
+//Falta descripción del bloque de texto
   void leyenda2() {
 
     fill(255);
@@ -178,7 +178,7 @@ class Miami2005 {
     text("Nubes", 730, 865);
   }
   
-  
+ //Falta descripción del bloque de texto 
   void leyenda3() {
 
     fill(255);
