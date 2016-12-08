@@ -1,3 +1,4 @@
+//Falta descripción del bloque de texto
 void tecLeft() {
   if (pantalla == 0) { 
     if (select != 0) {
@@ -12,7 +13,7 @@ void tecLeft() {
     }
   }
 }
-
+//Falta descripción del bloque de texto
 void tecRight() {
   if (pantalla == 0) { 
     if (select != 364) {
@@ -27,7 +28,7 @@ void tecRight() {
     }
   }
 }
-
+//Falta descripción del bloque de texto
 void tecUp() {
   if (pantalla == 0) { 
     if (select > 5) { 
@@ -40,7 +41,7 @@ void tecUp() {
     }
   }
 }
-
+//Falta descripción del bloque de texto
 void tecDown() {
   if (pantalla == 0) { 
     if (select < 359) {
