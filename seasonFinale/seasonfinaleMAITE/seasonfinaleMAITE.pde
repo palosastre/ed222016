@@ -3,12 +3,12 @@
  seasonfinale_MAITE
  
  Examen processing, mi código lee los datos meteorológicos de Aruba 2015.
- es necesario el uso del teclado para ver el proyecto, teclas: 1,2,3,4.
+ es necesario el uso del teclado para ver el proyecto, teclas: 1, 2, 3, 4.
  1. Muestra en una circunferencia gracias a líneas, la visibilidad mínima, media y máxima. 
  2. Muestra la humedad presente en el trimestre, consiste en mínima, media y máxima, se representa en opacidad y tamaño de elipses
  3. Muestra la temperatura que presentó Aruba en el año 2015, a través de un map y lerp de colores, las elipses cambian de tamaño y color dependiendo la mínima, media y máxima.
  4. Muestra la lluvia y nubes que se presentaron, todo esto visto mes a mes, los rectángulos varian en su eje x y opacidad (nubes), precipitaciones representados en puntos y grosor del punto define cantidad de mm.
- Este código cuenta con 5 set de variables y 4 visualizaciones distintas, correspondientes a: año, semestre, trimestre, mes y + día. 
+ Este código cuenta con 5 set de variables y 4 visualizaciones distintas, correspondientes a: año, semestre, trimestre, mes y día. 
  */
 
 
@@ -68,7 +68,7 @@ void draw() {
   text("KeyPressed 1, 2, 3, 4", 535, 20);
 
 
-  //descripción general del bloque de texto
+  //Falta descripción del bloque de texto
   if (manitos == 1) {
     textFont(cuerpo);
     fill(255);
@@ -76,7 +76,7 @@ void draw() {
     text("Visibilidad", 20, 60);
     text("Líneas Amarilla: Visibilidad Máxima - Líneas Blancas: Visibilidad Media - Líneas Celestes: Visibilidad Mínima", 330, 720);
   }
-
+  //Falta descripción del bloque de texto
   if (manitos == 2) {
     textFont(cuerpo);
     fill(255);
@@ -84,6 +84,7 @@ void draw() {
     text("Humedad", 20, 60);
     text("Elipses tienen Opacidad y Tamaño representan: Humedad Máxima, Humedad Media, Humedad Mínima", 350, 720);
   }
+    //Falta descripción del bloque de texto
   if (manitos == 3) {
     textFont(cuerpo);
     fill(255);
@@ -92,6 +93,7 @@ void draw() {
     text("Elipses entre Naranjo y Rojo: Tº Máxima - Elipses entre Amarillo y Verde: Tº Media - Elipses entre Blanco y Celestes: Tº Mínima", 300, 700);
     text("Cambio de Tamaño y Contorno", 520, 720);
   }
+    //Falta descripción del bloque de texto
   if (manitos == 4) {
     textFont(cuerpo);
     fill(255);
@@ -103,23 +105,23 @@ void draw() {
 
 
   for (int i = 0; i < e.length; i++) {
-    //descripción general del bloque de texto
+      //Falta descripción del bloque de texto
     if (manitos == 1) {
       e[i].diasprincipe(k);
       e[i].visibilidad();
     }
-    //descripción general del bloque de texto
+      //Falta descripción del bloque de texto
     if (manitos == 2) {
       e[i].dias(k);
       e[i].humedad();
     }
 
-    //descripción general del bloque de texto
+      //Falta descripción del bloque de texto
     if (manitos == 3) {
       e[i].dias(k);
       e[i].temperatura();
     }
-    //descripción general del bloque de texto
+      //Falta descripción del bloque de texto
     if (manitos == 4) {
 
       e[i].dias(k);
