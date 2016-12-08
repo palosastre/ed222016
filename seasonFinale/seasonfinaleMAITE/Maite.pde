@@ -162,7 +162,7 @@ class Maite {
 
   //Usado en viento, se usa an = PI/2.
   void diasprincipe(int paso) {
-    an = -PI/2;
+    an = -PI / 2;
     for (int i = 0; i < e.length; i++) {
       if (index >= i * paso && index < i * paso + paso) {
         float factor = map(paso, 7, 182, .04, .4);  //distancia Y
@@ -191,10 +191,10 @@ class Maite {
         float factor2 = map(paso, 7, 182, .09, .1); // distancia x
         float factor3 = map(paso, 7, 182, .9, .9); //distancia x
 
-        float x1 = map(index % paso, 0, paso-1, width * factor2, width * factor3);
+        float x1 = map(index % paso, 0, paso - 1, width * factor2, width * factor3);
         x = x1;
 
-        float y1 = map((i), 0, 365/paso, height * factor, height * factor1);
+        float y1 = map((i), 0, 365 / paso, height * factor, height * factor1);
         y = y1;
       }
     }
