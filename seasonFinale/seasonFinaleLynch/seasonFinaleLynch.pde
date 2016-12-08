@@ -72,7 +72,7 @@ void draw() {
   btWeek.display();
   btInfo.display();
 }
-
+//Falta descripción del mousePressed
 void mousePressed() {
 
   if (btInfo.mouseOver()) {
@@ -86,7 +86,7 @@ void mousePressed() {
   }
 }
 
-
+//Falta descripción del keyPressed
 void keyPressed() {
 
   if (key == CODED) {
