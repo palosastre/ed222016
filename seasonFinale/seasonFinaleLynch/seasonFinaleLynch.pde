@@ -98,10 +98,10 @@ void keyPressed() {
     if (keyCode == LEFT) tecLeft();   
     if (keyCode == RIGHT)  tecRight(); 
 
-    if ( select < 0 ) select = 0;
-    if ( select > 364) select = 364;
-    if ( weekS < 0 ) weekS = 0;
-    if ( weekS > 357 ) weekS = 357;
+    if (select < 0) select = 0;
+    if (select > 364) select = 364;
+    if (weekS < 0) weekS = 0;
+    if (weekS > 357) weekS = 357;
   }
   if (key == 'a') visu = 0;
   if (key == 's') visu = 1;
