@@ -26,7 +26,7 @@ void setup() {
   days = table.getRowCount();
   fuente = loadFont("PerpetuaTitlingMT-Light-48.vlw");
   info = loadImage("info.png");
-  for (int i = 0; i< table.getRowCount(); i++) {
+  for (int i = 0; i < table.getRowCount(); i++) {
 
     TableRow fila = table.getRow(i);
     String titulo = fila.getString("GMT");
@@ -40,9 +40,9 @@ void setup() {
     precipitation = fila.getInt("Precipitationmm");
     dia[i] = new Dia(titulo, maxWSpeed, meanWSpeed, wDir, eventos, precipitation, i, minT, meanT, maxT, i);
   }
-  btInfo = new Boton(width-100, height-100, 100, true, "info");
-  btDay = new Boton(0, height-100, 100, false, "day");
-  btWeek = new Boton(0, height-200, 100, false, "week");
+  btInfo = new Boton(width - 100, height - 100, 100, true, "info");
+  btDay = new Boton(0, height - 100, 100, false, "day");
+  btWeek = new Boton(0, height - 200, 100, false, "week");
 }
 
 void draw() {
@@ -60,7 +60,7 @@ void draw() {
     for (int i = weekS; i < weekO; i++) {    
       if (visu == 0) {
         dia[i].display();
-        dia[i].eventos((i-weekS)*20);
+        dia[i].eventos((i - weekS) * 20);
       }
       if (visu == 1) dia[i].temps();
 
