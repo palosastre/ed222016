@@ -2,9 +2,9 @@
 // Max Cordero
 // seasonFinaleMax
 /*Programa que muestra una visualización de datos de la cuidad de Miami durante el año 2005.
-Se crearon 3 set de variables. Si se apreta 1 se Temperatura Máxima, Temperatura Media y Lluvia agrupados en días con el fin de visualizar el año completo.
-Si se apreta 2 se muestra la relación entre humedad máxima y nubes agrupados en semestre.
-Por último, si se apreta 3 se muestra la relacion entre las ráfagas de viento, la humedad máxima y el viento. */
+Se crearon 3 set de variables. Si se aprieta 1 se Temperatura Máxima, Temperatura Media y Lluvia agrupados en días con el fin de visualizar el año completo.
+Si se aprieta 2 se muestra la relación entre humedad máxima y nubes agrupados en semestre.
+Por último, si se aprieta 3 se muestra la relacion entre las ráfagas de viento, la humedad máxima y el viento. */
 
 Miami2005 [] m;
 
@@ -23,7 +23,7 @@ int variable;
 
 void setup() {
   size(1200, 900);
-  variable =1;
+  variable = 1;
 
   tipografia = createFont("HelveticaNeue-Bold", 16);
   light = createFont("HelveticaNeue", 16);
