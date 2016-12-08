@@ -31,7 +31,7 @@ class Boton {
       ellipse(posX, posY, tam, tam); 
       fill(255);
       textSize(25);
-      text(data, posX+20, posY+60);
+      text(data, posX + 20, posY + 60);
     }
     blink();
     if (showInfo) {
@@ -43,7 +43,7 @@ class Boton {
     pushMatrix();
 
     fill(255);
-    translate(width-250, height-500);
+    translate(width - 250, height - 500);
     text(data, 100, -10);
     noStroke();
     rect(0, 0, 250, 400);
@@ -66,11 +66,11 @@ class Boton {
     popMatrix();
     fill(80, 80, 250);
     text("events", 110, 200);
-    if (frameCount % 30 == 0) n+=1;
-    if (n > 5) n=1;
+    if (frameCount % 30 == 0) n += 1;
+    if (n > 5) n = 1;
     println(n);
-    for (int i = 20; i < 100; i += 100/n) {
-      for (int j = 280; j < 380; j += 100/n) {
+    for (int i = 20; i < 100; i += 100 / n) {
+      for (int j = 280; j < 380; j += 100 / n) {
         fill(200, 200, 255);
         ellipse(i, j, 10, 10);
       }
@@ -82,8 +82,8 @@ class Boton {
 
   void blink() {
     if (mouseOver()) {
-      blink +=blinkVar;
-      if ( blink > 230 || blink <80) blinkVar *= -1;
+      blink += blinkVar;
+      if ( blink > 230 || blink < 80) blinkVar *= -1;
       noStroke();
       fill(255, blink);
       ellipseMode(CORNER);
