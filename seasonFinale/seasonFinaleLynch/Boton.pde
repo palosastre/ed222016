@@ -22,6 +22,7 @@ class Boton {
   }
 
   void display() {
+    //Falta descripción del bloque de texto
     imageMode(CORNER);
     if (bInfo) image(info, posX, posY, tam, tam);
     if (!bInfo) {
@@ -38,7 +39,7 @@ class Boton {
       if (bInfo) info();
     }
   }
-
+//Falta descripción del bloque de texto
   void info() {
     pushMatrix();
 
@@ -79,7 +80,7 @@ class Boton {
     text("precipitation", 110, 340);
     popMatrix();
   }
-
+//Falta descripción del bloque de texto
   void blink() {
     if (mouseOver()) {
       blink += blinkVar;
@@ -91,7 +92,7 @@ class Boton {
     }
   }
 
-
+//Falta descripción del bloque de texto
   boolean mouseOver() {
     if (mouseX > posX && mouseX < posX + tam 
       && mouseY > posY && mouseY < posY + tam) {
