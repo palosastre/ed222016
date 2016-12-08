@@ -66,7 +66,7 @@ void setup() {
     float Cloud = fila.getFloat(" CloudCover");
 
 
-    o[i] = new Objeto ( i, index, GustSpeed, MaxTemperature, MinTemperature, MeanTemperature, DewPointC, MinDewPointC, Visibility, MaxPressure, MinPressure, MaxWspeed, MeanWspeed, Cloud);
+    o[i] = new Objeto (i, index, GustSpeed, MaxTemperature, MinTemperature, MeanTemperature, DewPointC, MinDewPointC, Visibility, MaxPressure, MinPressure, MaxWspeed, MeanWspeed, Cloud);
   }
 }
 
@@ -109,7 +109,7 @@ void draw() {
     text("El color está representado por la", 900, 550);
     text("velocidad del viento, mientras más", 900, 570);
     text("verde mas viento el tamaño de la ", 900, 590);
-    text("línea está dado por la cantiad de nubes.", 900, 610);
+    text("línea está dado por la cantidad de nubes.", 900, 610);
   }
 
   if (objeto == 2) {
@@ -154,23 +154,23 @@ void draw() {
 //Ejecución con teclado:
 void keyPressed() {
 
-  if (key=='1') {
+  if (key == '1') {
     objeto = 0;
   }
 
-  if (key=='2') {
+  if (key == '2') {
     objeto = 1;
   }
 
-  if (key=='3') {
+  if (key == '3') {
     objeto = 2;
   }
 
-  if (key=='4') {
+  if (key == '4') {
     objeto = 3;
   }
 
-  if (key=='a') {
+  if (key == 'a') {
     a = 7;
     c = 7;
   }
